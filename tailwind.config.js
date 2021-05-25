@@ -24,6 +24,7 @@ module.exports = {
         ...colors
       }
     },
+    ...defaultTheme
   },
   variants: {
     extend: {

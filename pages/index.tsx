@@ -8,17 +8,17 @@ import 'tailwindcss/tailwind.css'
 
 export const Home = (): JSX.Element => {
   return (
-    <div className="container relative min-h-screen min-w-full w-screen h-screen max-w-auto bg-white dark:bg-gray-900">  
+    <div className="container relative min-h-screen min-w-full max-w-auto bg-gray-200 dark:bg-gray-900 transition duration-500">  
       <Navbar />
       <Sidebar />
-      <main className="flex-1 overflow-y-auto  py-3 px-5 h-full">
+      <main className="flex-1 overflow-y-auto py-3 px-5 h-full m-auto w-3/4">
         <section>
           <div className="container flex flex-col md:flex-row w-full md:w-1/2 align-center mx-auto rounded-l p-2 justify-evenly">
             <div className="">
-              <h2 className="text-xl font-bold text-black dark:text-white">
+              <h2 className="text-lg font-bold text-black dark:text-white">
                 Hello, world!
               </h2>
-              <p className="text-5xl text-black dark:text-gray-100">
+              <p className="text-l text-black dark:text-gray-100">
                 I'm Richard Paredes.
               </p>
             </div>

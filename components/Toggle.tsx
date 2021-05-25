@@ -7,7 +7,7 @@ interface ToggleProps {
 
 export const Toggle: React.FC<ToggleProps> = ({checked, onToggle}) => {
     return (
-        <div className="flex flex-col items-center justify-center ml-auto mr-3 my-3 md:mr-0 md:ml-0 md:w-full md:mt-auto">
+        <div className="flex flex-col items-center justify-center ml-auto mt-3 md:mt-auto md:mr-0 md:ml-1 md:w-full">
           <label className="flex items-center cursor-pointer">
             <div className="relative">
               <input type="checkbox" className="sr-only" onClick={onToggle} defaultChecked={checked} />
@@ -18,7 +18,7 @@ export const Toggle: React.FC<ToggleProps> = ({checked, onToggle}) => {
           <style jsx>{`
           input:checked ~ .dot {
             transform: translateX(100%);
-            background-color: #48bb78;
+            background-color: #34D399;
           }
       `}</style>
         </div>
