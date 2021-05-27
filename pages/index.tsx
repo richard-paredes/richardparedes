@@ -5,6 +5,7 @@ import { Sidebar } from '../components/Layout/Sidebar';
 import { Navbar } from '../components/Layout/Navbar';
 import { TabContent } from '../components/Tabs/TabContent';
 import { Tabs } from '../components/Tabs/Tabs';
+import { RightChevron } from '../components/Icons/RightChevron';
 
 export const Home = (): JSX.Element => {
   const [activeTab, setActiveTab] = useState('');
@@ -72,7 +73,7 @@ export const Home = (): JSX.Element => {
           </section>
           <section id="experience" className="flex flex-col py-20 min-h-screen w-full md:w-5/6 my-auto mx-auto">
 
-            <div className="my-auto  text-grayscaled">
+            <div className="mt-5 text-grayscaled">
               <h2 className="text-xl md:text-2xl mb-5 md:mb-10 special-text-colored">
                 My experience
               </h2>
@@ -81,30 +82,25 @@ export const Home = (): JSX.Element => {
                   <h2 className="text-base md:text-lg font-semibold text-black dark:text-white">Software Developer at <a href="https://www.hcss.com/" target="_blank" className="hyperlink">Heavy Construction System Specialists, Inc.</a></h2>
                   <h3 className="text-body text-grayscaled">Sept. 2019 - Present</h3>
                   <ul className="text-body text-grayscaled my-5">
-                    <li className="my-2">* Designed and developed web-based reporting tools, allowing customers track historical changes related to billing and better manage their users.</li>
-                    <li className="my-2">* Collaborated with UI and UX teams to redesign the previous login page, and introduced React to replace the legacy Angular codebase.</li>
-                    <li className="my-2">* Elevated existing web APIs by incorporating versioning, standardized responses, unit test coverage, and RESTful standards.</li>
-                    <li className="my-2">* Engaged in code reviews with team members and managed release and deployments using Microsoft Azure.</li>
+                    <li className="my-2"><RightChevron className="inline w-2 stroke-grayscaled" /> Designed and developed web-based reporting tools, allowing customers track historical changes related to billing and better manage their users.</li>
+                    <li className="my-2"><RightChevron className="inline w-2 stroke-grayscaled" /> Collaborated with UI and UX teams to redesign the previous login page, and introduced React to replace the legacy Angular codebase.</li>
+                    <li className="my-2"><RightChevron className="inline w-2 stroke-grayscaled" /> Elevated existing web APIs by incorporating versioning, standardized responses, unit test coverage, and RESTful standards.</li>
+                    <li className="my-2"><RightChevron className="inline w-2 stroke-grayscaled" /> Engaged in code reviews with team members and managed release and deployments using Microsoft Azure.</li>
                   </ul>
                 </TabContent>
                 <TabContent label="UH">
                   <h2 className="text-base md:text-lg font-semibold text-black dark:text-white">Game Developer at <a target="_blank" href="https://www.linkedin.com/company/uhredlabs" className="hyperlink">Univeristy of Houston</a></h2>
                   <h3 className="text-body text-grayscaled">Summer 2019</h3>
                   <ul className="text-body text-grayscaled my-5">
-                    <li className="my-2">* Participated in a entrepreneurship program, Pre-RED Labs, to kickstart a start-up focused on helping people with self-discovery through interactive games.</li>
-                    <li className="my-2">*  .</li>
-                    <li className="my-2">* Elevated existing web APIs by incorporating versioning, standardized responses, unit test coverage, and RESTful standards.</li>
-                    <li className="my-2">* Engaged in code reviews with team members and managed release and deployments using Microsoft Azure.</li>
+                    <li className="my-2"><RightChevron className="inline w-2 stroke-grayscaled" /> Participated in a entrepreneurship program, Pre-RED Labs, to kickstart a start-up focused on helping people with self-discovery through interactive games.</li>
+                    <li className="my-2"><RightChevron className="inline w-2 stroke-grayscaled" /> Developed a primitive 3D game prototype in Unity with dialogue system and character animations.</li>
                   </ul>
                 </TabContent>
                 <TabContent label="UT">
                   <h2 className="text-base md:text-lg font-semibold text-black dark:text-white">Undergraduate Research Mentor at <a href="https://cns.utexas.edu/fri/students/next-steps/peer-mentoring-program" className="hyperlink">University of Texas at Austin</a></h2>
                   <h3 className="text-body text-grayscaled">Jan. 2017 - Dec. 2018</h3>
                   <ul className="text-body text-grayscaled my-5">
-                    <li className="my-2">* Designed and developed web-based reporting tools, allowing customers track historical changes related to billing and better manage their users.</li>
-                    <li className="my-2">* Collaborated with UI and UX teams to redesign the previous login page, and introduced React to replace the legacy Angular codebase.</li>
-                    <li className="my-2">* Elevated existing web APIs by incorporating versioning, standardized responses, unit test coverage, and RESTful standards.</li>
-                    <li className="my-2">* Engaged in code reviews with team members and managed release and deployments using Microsoft Azure.</li>
+                    <li className="my-2"><RightChevron className="inline w-2 stroke-grayscaled" /></li>
                   </ul>
                 </TabContent>
               </Tabs>

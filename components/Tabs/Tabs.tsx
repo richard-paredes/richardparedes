@@ -23,10 +23,10 @@ export const Tabs: React.FC<TabsProps> = ({ children }) => {
         })}
       </ol>
     </div>
-    <div className="container md:w-2/3 xl:w-3/4 p-5 rounded-r-md border-r-2 border-colored">
+    <div className="container relative md:w-2/3 xl:w-3/4 p-5 rounded-r-md border-r-2 border-colored">
       {children.map(tabContent => {
         const { label } = tabContent.props
-        return <div key={label} className={activeTab === label ? 'block' : 'hidden'}>{tabContent}</div>
+        return <div key={label} className={activeTab === label ? 'block' : 'absolute opacity-0'}>{tabContent}</div>
       }
       )}
     </div>
