@@ -19,10 +19,15 @@ module.exports = {
           transparent: 'transparent',
           current: 'currentColor',
         }
-      }, 
+      },
       stroke: {
         ...colors
-      }
+      },
+      zIndex: {
+
+        '-10': '-10',
+        '-20': '-20',
+      },
     },
     ...defaultTheme
   },
