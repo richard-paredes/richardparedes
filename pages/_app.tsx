@@ -1,6 +1,6 @@
 // import App from "next/app";
 import type { AppProps /*, AppContext */ } from 'next/app'
-import 'tailwindcss/tailwind.css'
+import '../public/stylesheets/index.css';
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return <Component {...pageProps} />
