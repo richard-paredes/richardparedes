@@ -7,13 +7,13 @@ import colors from 'tailwindcss/colors';
 
 export const Navbar = () => {
     const { theme, toggleTheme } = useThemeMode();
-    return <header className="transition fixed w-full theme-bg bg-opacity-80 backdrop-filter dark:bg-opacity-80 backdrop-blur-md px-6 md:px-16 flex flex-wrap items-center py-1 md:py-2">
+    return <header className="transition z-20 fixed w-full theme-bg bg-opacity-80 backdrop-filter dark:bg-opacity-80 backdrop-blur-md px-6 md:px-16 flex flex-wrap items-center py-1 md:py-2">
         <div className="flex-1 flex justify-between items-center">
             <a href="#hello-world" className="h-10 w-10 rounded-full lg:ml-4 flex my-1 items-center justify-start lg:mb-0 mb-4 cursor-pointer border-2 border-transparent hover-border-colored z-30">
                 <Image alt="Richard Paredes" src="/images/me.jpg" width="100%" height="100%" className="rounded-full w-10 h-10" />
             </a>
             <label htmlFor="menu-toggle" className="point-cursor md:hidden block z-30">
-                <MenuIcon className="h-5 w-5 stroke-grayscaled" />
+                <MenuIcon className="h-5 w-5 stroke-grayscaled z-20" />
             </label>
         </div>
         <input type="checkbox" className="hidden" id="menu-toggle" />

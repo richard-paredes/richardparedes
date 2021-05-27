@@ -25,7 +25,7 @@ export const Home = (): JSX.Element => {
               <p className="text-xl md:text-2xl special-text-colored mb-5 md:mb-10">
                 hello, world!
               </p>
-              <h1 className="text-3xl md:text-5xl text-black dark:text-white my-2 md:my-5">
+              <h1 className="text-3xl md:text-5xl text-grayscaled my-2 md:my-5">
                 I'm <span className="font-bold">Richard Paredes</span>.
               </h1>
               <p className="text-2xl md:text-4xl">
@@ -44,10 +44,10 @@ export const Home = (): JSX.Element => {
           </section>
           <section id="about" className="flex py-20 min-h-screen w-full md:w-5/6 my-auto mx-auto">
             <div className="rounded-lg w-full flex flex-col md:flex-row my-auto overflow-auto sm:mx-auto md:mx-0 md:w-full">
-              <div className="z-0 w-full md:w-3/4 lg:w-2/3 xl:w-1/2 my-auto bg-grayscaled-soft">
-                <Image alt="Richard Paredes" src="/images/me.jpg" width="225px" height="225px" layout="responsive" className="rounded-lg" />
+              <div className="z-0 relative w-full md:w-3/4 h-64 md:h-96 mt-auto mb-auto">
+                <Image alt="Richard Paredes" src="/images/me.jpg" layout="fill" objectFit="contain" className="rounded-lg" />
               </div>
-              <div className="my-5 md:ml-10 flex flex-col container px-4 text-grayscaled">
+              <div className="my-5 flex flex-col container px-4 text-grayscaled">
                 <h2 className="text-xl md:text-2xl mb-5 md:mb-10 special-text-colored">
                   about me
                 </h2>
@@ -83,7 +83,7 @@ export const Home = (): JSX.Element => {
               </h2>
               <Tabs>
                 <TabContent label="HCSS">
-                  <h2 className="text-base md:text-lg font-semibold text-black dark:text-white">Software Developer at <a href="https://www.hcss.com/" target="_blank" className="hyperlink">Heavy Construction System Specialists, Inc.</a></h2>
+                  <h2 className="text-base md:text-lg font-semibold text-grayscaled">Software Developer at <a href="https://www.hcss.com/" target="_blank" className="hyperlink">Heavy Construction System Specialists, Inc.</a></h2>
                   <h3 className="text-body text-grayscaled">Sept. 2019 - Present</h3>
                   <ul className="text-body text-grayscaled my-5">
                     <li className="my-2"><RightChevron className="inline w-2 stroke-grayscaled" /> Designed and developed web-based reporting tools, allowing customers track historical changes related to billing and better manage their users.</li>
@@ -93,7 +93,7 @@ export const Home = (): JSX.Element => {
                   </ul>
                 </TabContent>
                 <TabContent label="UH">
-                  <h2 className="text-base md:text-lg font-semibold text-black dark:text-white">Game Developer at <a target="_blank" href="https://www.linkedin.com/company/uhredlabs" className="hyperlink">Univeristy of Houston</a></h2>
+                  <h2 className="text-base md:text-lg font-semibold text-grayscaled">Game Developer at <a target="_blank" href="https://www.linkedin.com/company/uhredlabs" className="hyperlink">Univeristy of Houston</a></h2>
                   <h3 className="text-body text-grayscaled">Summer 2019</h3>
                   <ul className="text-body text-grayscaled my-5">
                     <li className="my-2"><RightChevron className="inline w-2 stroke-grayscaled" /> Participated in a entrepreneurship program, Pre-RED Labs, to kickstart a start-up focused on helping people with self-discovery through interactive games.</li>
@@ -102,7 +102,7 @@ export const Home = (): JSX.Element => {
                   </ul>
                 </TabContent>
                 <TabContent label="UT">
-                  <h2 className="text-base md:text-lg font-semibold text-black dark:text-white">Undergraduate Research Mentor at <a href="https://cns.utexas.edu/fri/students/next-steps/peer-mentoring-program" className="hyperlink">University of Texas at Austin</a></h2>
+                  <h2 className="text-base md:text-lg font-semibold text-grayscaled">Undergraduate Research Mentor at <a href="https://cns.utexas.edu/fri/students/next-steps/peer-mentoring-program" className="hyperlink">University of Texas at Austin</a></h2>
                   <h3 className="text-body text-grayscaled">Jan. 2017 - Dec. 2018</h3>
                   <ul className="text-body text-grayscaled my-5">
                     <li className="my-2"><RightChevron className="inline w-2 stroke-grayscaled" /> Conducted research focused on exploring methods to induce novel antibiotic production by <span className="italic">Streptomyces</span>.</li>
@@ -114,36 +114,45 @@ export const Home = (): JSX.Element => {
               </Tabs>
             </div>
           </section>
-          <section id="projects" className="flex flex-col py-20 min-h-screen w-full md:w-5/6 my-auto mx-auto">
+          <section id="projects" className="flex flex-col py-20 min-h-screen w-full my-auto mx-auto">
             <div className="my-auto text-grayscaled">
               <h2 className="text-xl md:text-2xl text-center mb-5 md:mb-10 special-text-colored">
                 things i've built
               </h2>
-              <div className="max-w-sm rounded-sm overflow-hidden shadow-lg m-16 border-b-2 border-colored bg-grayscaled-soft">
-                <div className="h-64 bg-cover hover:bg-gray" style={{ backgroundImage: "url('https://user-images.githubusercontent.com/5419306/64431443-71823880-d088-11e9-9bd7-1b314f94dc1f.png')" }}></div>
-                <div className="mx-6 my-4 border-b border-gray-light">
-                  <div className="font-medium text-base text-gray-darker mb-4">Lyrical Listener</div>
-                  <p className="font-normal text-gray-dark text-sm mb-2">
-                    Lorem ipsum dolor sit amet, consectetur
-                  </p>
-                  <p className="font-normal text-gray-dark text-sm mb-4">
-                    Lorem ipsum dolor sit amet, consectetur
-                  </p>
-                </div>
-                <div className="mx-6 my-4 flex flex-col">
-                  <div className="flex-grow text-xs text-black dark:text-white">
-                    <span className="px-1">React</span>
-                    <span className="px-1">NextJS</span>
-                    <span className="px-1">Chakra-UI</span>
-                    <span className="px-1">Spotify API</span>
+              <div className="flex flex-col">
+                <div className="relative flex flex-col-reverse my-12 w-full md:h-96">
+                  <div className="block md:w-1/2 xl:w-2/5 z-10 my-auto mx-auto">
+                    <div className="flex flex-col rounded-md shadow-lg bg-grayscaled-soft border-b-4 md:border-b-0 md:border-l-4 border-colored">
+                      <div className="mx-6 my-4">
+                        <div className="font-medium text-base text-contrast mb-4">Lyrical Listener</div>
+                        <p className="font-normal text-gray-dark text-sm mb-2">
+                        The days of manually searching for song lyrics are over. With this minimalistic web app, sing along to the lyrics of those awesome tunes on Spotify. 
+                      </p>
+                      </div>
+                      <div className="mx-6 mb-2 flex flex-col">
+                        <div className="flex-grow text-xs text-grayscaled">
+                          <p>Built with:</p>
+                          <span className="mr-1">React</span>
+                          <span className="m-1">NextJS</span>
+                          <span className="m-1">Chakra-UI</span>
+                          <span className="m-1">ASP.NET</span>
+                          <span className="ml-1">Spotify API</span>
+                        </div>
+                        <div className="self-end text-right flex">
+                          <GitHub className="w-5 m-2  stroke-colored cursor-pointer" />
+                          <BoxArrowUpRight className="w-5 m-2 text-colored cursor-pointer" />
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex-grow self-end text-right flex">
-                    <BoxArrowUpRight className="w-5 text-colored m-2" />
-                    <GitHub className="w-5 stroke-colored m-2" />
+                  <div className="w-full hidden md:block opacity-80 dark:opacity-50 rounded-md bg-colored">
+                    <Image src="/images/lyrical_listener.png" layout="fill" objectFit="contain" />
+                  </div>
+                  <div className="relative h-full md:hidden">
+                    <Image src="/images/lyrical_listener.png" layout="responsive" width="960" height="461" />
                   </div>
                 </div>
               </div>
-
             </div>
           </section>
           <section id="contact" className="md:px-32 py-32 min-h-screen">

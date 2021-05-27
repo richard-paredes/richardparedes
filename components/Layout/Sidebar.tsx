@@ -3,7 +3,7 @@ import { GitHub } from '../Icons/Logos/GitHub';
 import { LinkedIn } from '../Icons/Logos/LinkedIn';
 
 export const Sidebar = () => {
-  return <div className="hidden md:block fixed bottom-5 left-5 h-auto" id="side">
+  return <div className="hidden md:block md:z-10 fixed bottom-5 left-5 h-auto" id="side">
     <div className="h-auto mx-auto w-full flex flex-wrap items-center justify-center flex-col md:h-full">
       <a className="p-2 my-2 btn-colored stroke-colored">
         <GitHub className="w-6" />
