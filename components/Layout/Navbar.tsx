@@ -19,7 +19,7 @@ export const Navbar = () => {
         <input type="checkbox" className="hidden" id="menu-toggle" />
         <div className="hidden md:flex md:items-center md:w-auto w-full" id="menu">
             <nav>
-                <ul className="md:flex items-center text-center justify-between text-lg text-gray-900 dark:text-gray-400 pt-4 md:pt-0">
+                <ul className="md:flex items-center text-center justify-between text-body text-gray-900 dark:text-gray-400 pt-4 md:pt-0">
                     <li>
                         <a href="#about" className="md:p-4 py-3 px-0 block border-b-2 border-transparent hover-text-colored hover-border-colored">About</a>
                     </li>

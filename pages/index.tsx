@@ -1,187 +1,120 @@
 import Head from 'next/head'
 import Image from 'next/image';
-import React from 'react'
+import React, { useState } from 'react'
 import { Sidebar } from '../components/Layout/Sidebar';
 import { Navbar } from '../components/Layout/Navbar';
+import { TabContent } from '../components/Tabs/TabContent';
+import { Tabs } from '../components/Tabs/Tabs';
 
 export const Home = (): JSX.Element => {
+  const [activeTab, setActiveTab] = useState('');
   return (
     <div className="flex flex-col font-mono theme-bg transition overflow-auto">
+      <Head>
+        <title>Richard Paredes</title>
+      </Head>
       <Navbar />
       <Sidebar />
       <div className="w-3/4 m-auto flex align-center ">
         <main className="w-full">
-          <section id="hello-world" className="w-full flex py-20 xl:py-32 min-h-screen md:w-3/4">
+          <section id="hello-world" className="w-full flex py-20 xl:py-32 min-h-screen md:w-3/5 xl:w-3/4">
             <div className="rounded-lg flex flex-col my-auto text-grayscaled">
-              <p className="header text-colored mb-10">
+              <p className="text-xl md:text-2xl text-colored mb-5 md:mb-10">
                 Hello, world!
               </p>
-              <h1 className="text-5xl text-black dark:text-white my-5">
+              <h1 className="text-3xl md:text-5xl text-black dark:text-white my-2 md:my-5">
                 I'm <span className="font-bold">Richard Paredes</span>.
               </h1>
-              <p className="text-4xl">
+              <p className="text-2xl md:text-4xl">
                 ^~^
               </p>
-              <p className="text-md my-10">
+              <p className="text-body my-4 md:my-10">
                 I'm a software engineer situated in Houston, Texas who loves to build applications for people. At the moment, I'm a full-stack web developer at <a href="https://www.hcss.com/" target="_blank" className="hyperlink">HCSS</a>, creating robust and scalable software for the construction industry.
               </p>
-              <div className="text-lg w-full align-self-end my-5">
+              <div className="text-md md:text-md w-full align-self-end my-2 md:my-5">
                 <a href="mailto:richard.o.paredes@gmail.com" className="btn-colored">Contact me</a>
               </div>
             </div>
           </section>
           <section id="about" className="flex py-20 min-h-screen w-full md:w-5/6 my-auto mx-auto">
             <div className="rounded-lg w-full flex flex-col md:flex-row my-auto overflow-auto sm:mx-auto md:mx-0 md:w-full">
-              <div className="z-0 w-full md:w-3/4 lg:w-2/3 xl:w-1/2 my-auto bg-gray-200 dark:bg-gray-800">
+              <div className="z-0 w-full md:w-3/4 lg:w-2/3 xl:w-1/2 my-auto bg-grayscaled-soft">
                 <Image alt="Richard Paredes" src="/images/me.jpg" width="225px" height="225px" layout="responsive" className="rounded-lg" />
               </div>
-              <div className="my-5 md:my-0 md:ml-10 flex flex-col container px-4 text-grayscaled">
-                <h2 className="header special-text-colored">
+              <div className="my-5 md:ml-10 flex flex-col container px-4 text-grayscaled">
+                <h2 className="text-xl md:text-2xl mb-5 md:mb-10 special-text-colored">
                   About me
                 </h2>
-                <p className="text-md mb-10">
+                <p className="text-body mb-5 md:mb-10">
                   Hi-ya!
                   My name is Richard and I'm passionate about developing web and XR applications. My journey into software development began back when I was a wee lad trying to install mods for my favorite game, <a href="https://thewitcher.com/en/witcher3" target="_blank" className="hyperlink">The Witcher 3: Wild Hunt</a>. After many manual script merge attempts and corrupted game saves, I realized I really enjoy digging deep and working with computers to make magical things happen.
                 </p>
-                <p className="text-md mb-10">
+                <p className="text-body mb-5 md:mb-10">
                   Since then, I've expanded my knowledge through various avenues: a <a href="https://redlabs.uh.edu" target="_blank" className="hyperlink">start-up accelerator program for students</a>, <a href="https://cougarcs.com/" target="_blank" className="hyperlink">student organizations</a>, and, of course, <a href="https://github.com/richard-paredes/" target="_blank" className="hyperlink">personal projects</a>. Right now, I'm honing my skills by developing RESTful APIs and friendly interfaces for complex user management over at <a href="https://www.hcss.com/" target="_blank" className="hyperlink">HCSS</a>.
                 </p>
-                <p className="text-md mb-5">
+                <p className="text-body mb-2 md:mb-5">
                   Here are some technologies I've picked up along the way:
                 </p>
-                <div className="flex text-black dark:text-white flex-wrap rounded-md">
-                  <span className="p-0 px-2 rounded-md text-sm uppercase border-l-2 border-r-2 border-gray-700 dark:border-gray-400 font-semibold m-2">Git</span>
-                  <span className="p-0 px-2 rounded-md text-sm uppercase border-l-2 border-r-2 border-gray-700 dark:border-gray-400 font-semibold m-2">C#</span>
-                  <span className="p-0 px-2 rounded-md text-sm uppercase border-l-2 border-r-2 border-gray-700 dark:border-gray-400 font-semibold m-2">TypeScript</span>
-                  <span className="p-0 px-2 rounded-md text-sm uppercase border-l-2 border-r-2 border-gray-700 dark:border-gray-400 font-semibold m-2">Python</span>
-                  <span className="p-0 px-2 rounded-md text-sm uppercase border-l-2 border-r-2 border-gray-700 dark:border-gray-400 font-semibold m-2">ASP.NET</span>
-                  <span className="p-0 px-2 rounded-md text-sm uppercase border-l-2 border-r-2 border-gray-700 dark:border-gray-400 font-semibold m-2">Node.JS</span>
-                  <span className="p-0 px-2 rounded-md text-sm uppercase border-l-2 border-r-2 border-gray-700 dark:border-gray-400 font-semibold m-2">React</span>
-                  <span className="p-0 px-2 rounded-md text-sm uppercase border-l-2 border-r-2 border-gray-700 dark:border-gray-400 font-semibold m-2">Unity</span>
-                  <span className="p-0 px-2 rounded-md text-sm uppercase border-l-2 border-r-2 border-gray-700 dark:border-gray-400 font-semibold m-2">Microsoft Azure</span>
-                  <span className="p-0 px-2 rounded-md text-sm uppercase border-l-2 border-r-2 border-gray-700 dark:border-gray-400 font-semibold m-2">Next.JS</span>
+                <div className="flex text-black text-xs md:text-sm dark:text-white flex-wrap rounded-md">
+                  <span className="pill">Git</span>
+                  <span className="pill">C#</span>
+                  <span className="pill">TypeScript</span>
+                  <span className="pill">Python</span>
+                  <span className="pill">ASP.NET</span>
+                  <span className="pill">Node.JS</span>
+                  <span className="pill">React</span>
+                  <span className="pill">Unity</span>
+                  <span className="pill">Microsoft Azure</span>
+                  <span className="pill">Next.JS</span>
                 </div>
               </div>
             </div>
           </section>
-          <section id="experience" className="flex flex-col py-20 min-h-screen w-full my-auto mx-auto">
-            <div className="mt-auto text-grayscaled">
-              <h2 className="header special-text-colored">
+          <section id="experience" className="flex flex-col py-20 min-h-screen w-full md:w-5/6 my-auto mx-auto">
+
+            <div className="my-auto  text-grayscaled">
+              <h2 className="text-xl md:text-2xl mb-5 md:mb-10 special-text-colored">
                 My experience
-                </h2>
-            </div>
-            <div className="container">
-              <div
-                className="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50"
-              >
-                {/* <!-- left --> */}
-                <div className="flex flex-row-reverse md:contents">
-                  <div
-                    className="border-l-4 border-colored col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md"
-                  >
-                    <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3>
-                    <p className="leading-tight text-justify">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-                      quaerat?
-                </p>
-                  </div>
-                  <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
-                    <div className="h-full w-6 flex items-center justify-center">
-                      <div className="h-full w-1 special-bg-colored pointer-events-none"></div>
-                    </div>
-                    {/* <div
-                      className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full border-l-4 border-colored shadow"
-                    ></div> */}
-                  </div>
-                </div>
-                {/* <!-- right --> */}
-                <div className="flex md:contents">
-                  <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
-                    <div className="h-full w-6 flex items-center justify-center">
-                      <div className="h-full w-1 special-bg-colored pointer-events-none"></div>
-                    </div>
-                    {/* <div
-                      className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full border-l-4 border-colored shadow"
-                    ></div> */}
-                  </div>
-                  <div
-                    className="border-l-4 border-colored col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md"
-                  >
-                    <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3>
-                    <p className="leading-tight text-justify">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Vitae, facilis.
-                </p>
-                  </div>
-                </div>
-                {/* <!-- left --> */}
-                <div className="flex flex-row-reverse md:contents">
-                  <div
-                    className="border-l-4 border-colored col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md"
-                  >
-                    <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3>
-                    <p className="leading-tight text-justify">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-                      quaerat?
-                </p>
-                  </div>
-                  <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
-                    <div className="h-full w-6 flex items-center justify-center">
-                      <div className="h-full w-1 special-bg-colored pointer-events-none"></div>
-                    </div>
-                    {/* <div
-                      className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full border-l-4 border-colored shadow"
-                    ></div> */}
-                  </div>
-                </div>
-                {/* <!-- left --> */}
-                <div className="flex flex-row-reverse md:contents">
-                  <div
-                    className="border-l-4 border-colored col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md"
-                  >
-                    <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3>
-                    <p className="leading-tight text-justify">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-                      quaerat?
-                </p>
-                  </div>
-                  <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
-                    <div className="h-full w-6 flex items-center justify-center">
-                      <div className="h-full w-1 special-bg-colored pointer-events-none"></div>
-                    </div>
-                    {/* <div
-                      className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full border-l-4 border-colored shadow"
-                    ></div> */}
-                  </div>
-                </div>
-                {/* <!-- right --> */}
-                <div className="flex md:contents">
-                  <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
-                    <div className="h-full w-6 flex items-center justify-center">
-                      <div className="h-full w-1 special-bg-colored pointer-events-none"></div>
-                    </div>
-                    {/* <div
-                      className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full border-l-4 border-colored shadow"
-                    ></div> */}
-                  </div>
-                  <div
-                    className="border-l-4 border-colored col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md"
-                  >
-                    <h3 className="font-semibold text-lg mb-1">Lorem ipsum</h3>
-                    <p className="leading-tight text-justify">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Vitae, facilis.
-                </p>
-                  </div>
-                </div>
-              </div>
+              </h2>
+              <Tabs>
+                <TabContent label="HCSS">
+                  <h2 className="text-base md:text-lg font-semibold text-black dark:text-white">Software Developer at <a href="https://www.hcss.com/" target="_blank" className="hyperlink">Heavy Construction System Specialists, Inc.</a></h2>
+                  <h3 className="text-body text-grayscaled">Sept. 2019 - Present</h3>
+                  <ul className="text-body text-grayscaled my-5">
+                    <li className="my-2">* Designed and developed web-based reporting tools, allowing customers track historical changes related to billing and better manage their users.</li>
+                    <li className="my-2">* Collaborated with UI and UX teams to redesign the previous login page, and introduced React to replace the legacy Angular codebase.</li>
+                    <li className="my-2">* Elevated existing web APIs by incorporating versioning, standardized responses, unit test coverage, and RESTful standards.</li>
+                    <li className="my-2">* Engaged in code reviews with team members and managed release and deployments using Microsoft Azure.</li>
+                  </ul>
+                </TabContent>
+                <TabContent label="UH">
+                  <h2 className="text-base md:text-lg font-semibold text-black dark:text-white">Game Developer at <a target="_blank" href="https://www.linkedin.com/company/uhredlabs" className="hyperlink">Univeristy of Houston</a></h2>
+                  <h3 className="text-body text-grayscaled">Summer 2019</h3>
+                  <ul className="text-body text-grayscaled my-5">
+                    <li className="my-2">* Participated in a entrepreneurship program, Pre-RED Labs, to kickstart a start-up focused on helping people with self-discovery through interactive games.</li>
+                    <li className="my-2">*  .</li>
+                    <li className="my-2">* Elevated existing web APIs by incorporating versioning, standardized responses, unit test coverage, and RESTful standards.</li>
+                    <li className="my-2">* Engaged in code reviews with team members and managed release and deployments using Microsoft Azure.</li>
+                  </ul>
+                </TabContent>
+                <TabContent label="UT">
+                  <h2 className="text-base md:text-lg font-semibold text-black dark:text-white">Undergraduate Research Mentor at <a href="https://cns.utexas.edu/fri/students/next-steps/peer-mentoring-program" className="hyperlink">University of Texas at Austin</a></h2>
+                  <h3 className="text-body text-grayscaled">Jan. 2017 - Dec. 2018</h3>
+                  <ul className="text-body text-grayscaled my-5">
+                    <li className="my-2">* Designed and developed web-based reporting tools, allowing customers track historical changes related to billing and better manage their users.</li>
+                    <li className="my-2">* Collaborated with UI and UX teams to redesign the previous login page, and introduced React to replace the legacy Angular codebase.</li>
+                    <li className="my-2">* Elevated existing web APIs by incorporating versioning, standardized responses, unit test coverage, and RESTful standards.</li>
+                    <li className="my-2">* Engaged in code reviews with team members and managed release and deployments using Microsoft Azure.</li>
+                  </ul>
+                </TabContent>
+              </Tabs>
             </div>
           </section>
           <section id="projects" className="flex flex-col py-20 min-h-screen w-full my-auto mx-auto">
             <div className="mt-auto text-grayscaled">
               <h2 className="header special-text-colored">
                 My experience
-                </h2>
+              </h2>
             </div>
             <div className="w-full h-1 border-2 mb-auto">
 
