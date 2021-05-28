@@ -9,6 +9,7 @@ import { RightChevron } from '../components/Icons/RightChevron';
 import { GitHub } from '../components/Icons/Logos/GitHub';
 import { BoxArrowUpRight } from '../components/Icons/BoxArrowUpRight';
 import { Card } from '../components/Cards/Card';
+import { Heart } from '../components/Icons/Heart';
 
 export const Home = (): JSX.Element => {
 
@@ -19,7 +20,7 @@ export const Home = (): JSX.Element => {
       </Head>
       <Navbar />
       <Sidebar />
-      <div className="w-3/4 m-auto flex align-center ">
+      <div className="w-3/4 m-auto align-center ">
         <main className="w-full">
           <section id="hello-world" className="w-full flex py-20 xl:py-32 min-h-screen md:w-3/5 xl:w-3/4">
             <div className="rounded-lg flex flex-col my-auto text-grayscaled">
@@ -125,10 +126,10 @@ export const Home = (): JSX.Element => {
                   heading={"Lyrical Listener"}
                   description={"The days of manually searching for song lyrics are over. With this minimalistic web app, sing along to the lyrics of those awesome tunes on Spotify."}
                   technologies={['React', 'Chakra-UI', 'ASP.NET', 'Spotify API']}
-                  links={[<a key={0} title="GitHub" className="border-2 border-transparent p-1 cursor-pointer rounded-md stroke-grayscaled hover-stroke-colored my-1">
+                  links={[<a key={0} title="GitHub" href="https://github.com/richard-paredes/lyrical-listener" className="border-2 border-transparent p-1 cursor-pointer rounded-md stroke-grayscaled hover-stroke-colored my-1">
                     <GitHub className="w-5" />
                   </a>,
-                  <a key={1} title="Lyrical Listener" className="border-2 border-transparent p-1 cursor-pointer rounded-md text-grayscaled hover-text-colored my-1">
+                  <a key={1} title="Lyrical Listener" href="https://lyrical-listener.azurewebsites.net/" className="border-2 border-transparent p-1 cursor-pointer rounded-md text-grayscaled hover-text-colored my-1">
                     <BoxArrowUpRight className="w-5" />
                   </a>]}
                   bgImageSrc={'/images/lyrical_listener.png'}
@@ -137,10 +138,10 @@ export const Home = (): JSX.Element => {
                   heading={"League of Legends Stats Tracker"}
                   description={"Review some of your recent League of Legends gameplay statistics. Displays your rank status, as well as data visualizations for your last played match."}
                   technologies={['React', 'TailwindCSS', 'Next.JS', 'Riot Games API']}
-                  links={[<a key={0} title="GitHub" className="border-2 border-transparent p-1 cursor-pointer rounded-md stroke-grayscaled hover-stroke-colored my-1">
+                  links={[<a key={0} title="GitHub" href="https://github.com/richard-paredes/league-stats-tracker-v2" className="border-2 border-transparent p-1 cursor-pointer rounded-md stroke-grayscaled hover-stroke-colored my-1">
                     <GitHub className="w-5" />
                   </a>,
-                  <a key={1} title="League Stats Tracker" className="border-2 border-transparent p-1 cursor-pointer rounded-md text-grayscaled hover-text-colored my-1">
+                  <a key={1} title="League Stats Tracker" href="https://league-stats-tracker-v2.vercel.app/" className="border-2 border-transparent p-1 cursor-pointer rounded-md text-grayscaled hover-text-colored my-1">
                     <BoxArrowUpRight className="w-5" />
                   </a>]}
                   bgImageSrc={'/images/league_stats_tracker.png'}
@@ -167,6 +168,9 @@ export const Home = (): JSX.Element => {
             </div>
           </section>
         </main>
+        <footer className="w-full flex justify-center p-12 text-xs text-grayscaled">
+          <p>Developed with lots of <Heart className="inline" /> by yours truly.</p>
+        </footer>
       </div>
     </div>
   )
