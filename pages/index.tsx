@@ -10,9 +10,9 @@ import { GitHub } from '../components/Icons/Logos/GitHub';
 import { BoxArrowUpRight } from '../components/Icons/BoxArrowUpRight';
 import { Card } from '../components/Cards/Card';
 import { Heart } from '../components/Icons/Heart';
+import { CatFact } from '../components/CatFact';
 
 export const Home = (): JSX.Element => {
-
   return (
     <div className="flex flex-col font-mono theme-bg transition overflow-auto">
       <Head>
@@ -31,7 +31,7 @@ export const Home = (): JSX.Element => {
                 I'm <span className="font-bold">Richard Paredes</span>.
               </h1>
               <p className="text-2xl md:text-4xl">
-                ^~^
+                (-:
               </p>
               <p className="text-body my-4 md:my-10">
                 I'm a software engineer situated in Houston, Texas who loves to build applications for people. At the moment, I'm a full-stack web developer at <a href="https://www.hcss.com/" target="_blank" className="hyperlink">HCSS</a>, creating robust and scalable software for the construction industry.
@@ -45,35 +45,37 @@ export const Home = (): JSX.Element => {
             </div>
           </section>
           <section id="about" className="flex flex-col py-20 min-h-screen w-full md:w-5/6 mx-auto my-auto">
-            <h2 className="text-xl md:text-2xl w-full mb-5 special-text-colored">
-              about me
+            <div className="my-auto">
+              <h2 className="text-xl md:text-2xl w-full mb-5 special-text-colored">
+                about me
             </h2>
-            <div className="rounded-lg w-full flex flex-col md:flex-row overflow-auto sm:mx-auto md:mx-0 md:w-full">
-              <div className="z-0 relative w-full md:w-3/4 h-64 md:h-96 my-auto">
-                <Image alt="Richard Paredes" src="/images/me.jpg" layout="fill" objectFit="contain" className="rounded-lg" />
-              </div>
-              <div className="flex flex-col container md:px-4 text-grayscaled my-5 md:my-0">
-                <p className="text-body mb-5 md:mb-10">
-                  Hi-ya!
+              <div className="rounded-lg w-full flex flex-col md:flex-row overflow-auto sm:mx-auto md:mx-0 md:w-full">
+                <div className="z-0 relative w-full md:w-3/4 h-64 md:h-96 my-auto">
+                  <Image alt="Richard Paredes" src="/images/me.jpg" layout="fill" objectFit="contain" className="rounded-lg" />
+                </div>
+                <div className="flex flex-col container md:px-4 text-grayscaled my-5 md:my-0">
+                  <p className="text-body mb-5 md:mb-10">
+                    Hi-ya!
                   My name is Richard and I'm passionate about developing web and XR applications. My journey into software development began back when I was a wee lad trying to install mods for my favorite game, <a href="https://thewitcher.com/en/witcher3" target="_blank" className="hyperlink">The Witcher 3: Wild Hunt</a>. After many manual script merge attempts and corrupted game saves, I realized I really enjoy digging deep and working with computers to make magical things happen.
                 </p>
-                <p className="text-body mb-5 md:mb-10">
-                  Since then, I've expanded my knowledge through various avenues: a <a href="https://redlabs.uh.edu" target="_blank" className="hyperlink">start-up accelerator program for students</a>, <a href="https://cougarcs.com/" target="_blank" className="hyperlink">student organizations</a>, and, of course, <a href="https://github.com/richard-paredes/" target="_blank" className="hyperlink">personal projects</a>. Right now, I'm honing my skills by developing RESTful APIs and friendly interfaces for complex user management over at <a href="https://www.hcss.com/" target="_blank" className="hyperlink">HCSS</a>.
+                  <p className="text-body mb-5 md:mb-10">
+                    Since then, I've expanded my knowledge through various avenues: a <a href="https://redlabs.uh.edu" target="_blank" className="hyperlink">start-up accelerator program for students</a>, <a href="https://cougarcs.com/" target="_blank" className="hyperlink">student organizations</a>, and, of course, <a href="https://github.com/richard-paredes/" target="_blank" className="hyperlink">personal projects</a>. Right now, I'm honing my skills by developing RESTful APIs and friendly interfaces for complex user management over at <a href="https://www.hcss.com/" target="_blank" className="hyperlink">HCSS</a>.
                 </p>
-                <p className="text-body mb-2 md:mb-5">
-                  Here are some technologies I've picked up along the way:
+                  <p className="text-body mb-2 md:mb-5">
+                    Here are some technologies I've picked up along the way:
                 </p>
-                <div className="flex text-black text-xs md:text-sm dark:text-white flex-wrap rounded-md">
-                  <span className="pill">Git</span>
-                  <span className="pill">C#</span>
-                  <span className="pill">TypeScript</span>
-                  <span className="pill">Python</span>
-                  <span className="pill">ASP.NET</span>
-                  <span className="pill">Node.JS</span>
-                  <span className="pill">React</span>
-                  <span className="pill">Unity</span>
-                  <span className="pill">Microsoft Azure</span>
-                  <span className="pill">Next.JS</span>
+                  <div className="flex text-black text-xs md:text-sm dark:text-white flex-wrap rounded-md">
+                    <span className="pill">Git</span>
+                    <span className="pill">C#</span>
+                    <span className="pill">TypeScript</span>
+                    <span className="pill">Python</span>
+                    <span className="pill">ASP.NET</span>
+                    <span className="pill">Node.JS</span>
+                    <span className="pill">React</span>
+                    <span className="pill">Unity</span>
+                    <span className="pill">Microsoft Azure</span>
+                    <span className="pill">Next.JS</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -126,10 +128,10 @@ export const Home = (): JSX.Element => {
                   heading={"Lyrical Listener"}
                   description={"The days of manually searching for song lyrics are over. With this minimalistic web app, sing along to the lyrics of those awesome tunes on Spotify."}
                   technologies={['React', 'Chakra-UI', 'ASP.NET', 'Spotify API']}
-                  links={[<a key={0} title="GitHub" href="https://github.com/richard-paredes/lyrical-listener" className="border-2 border-transparent p-1 cursor-pointer rounded-md stroke-grayscaled hover-stroke-colored my-1">
+                  links={[<a key={0} title="GitHub" target="_blank" href="https://github.com/richard-paredes/lyrical-listener" className="border-2 border-transparent p-1 cursor-pointer rounded-md stroke-grayscaled hover-stroke-colored my-1">
                     <GitHub className="w-5" />
                   </a>,
-                  <a key={1} title="Lyrical Listener" href="https://lyrical-listener.azurewebsites.net/" className="border-2 border-transparent p-1 cursor-pointer rounded-md text-grayscaled hover-text-colored my-1">
+                  <a key={1} title="Lyrical Listener" target="_blank" href="https://lyrical-listener.azurewebsites.net/" className="border-2 border-transparent p-1 cursor-pointer rounded-md text-grayscaled hover-text-colored my-1">
                     <BoxArrowUpRight className="w-5" />
                   </a>]}
                   bgImageSrc={'/images/lyrical_listener.png'}
@@ -138,21 +140,21 @@ export const Home = (): JSX.Element => {
                   heading={"League of Legends Stats Tracker"}
                   description={"Review some of your recent League of Legends gameplay statistics. Displays your rank status, as well as data visualizations for your last played match."}
                   technologies={['React', 'TailwindCSS', 'Next.JS', 'Riot Games API']}
-                  links={[<a key={0} title="GitHub" href="https://github.com/richard-paredes/league-stats-tracker-v2" className="border-2 border-transparent p-1 cursor-pointer rounded-md stroke-grayscaled hover-stroke-colored my-1">
+                  links={[<a key={0} title="GitHub" target="_blank" href="https://github.com/richard-paredes/league-stats-tracker-v2" className="border-2 border-transparent p-1 cursor-pointer rounded-md stroke-grayscaled hover-stroke-colored my-1">
                     <GitHub className="w-5" />
                   </a>,
-                  <a key={1} title="League Stats Tracker" href="https://league-stats-tracker-v2.vercel.app/" className="border-2 border-transparent p-1 cursor-pointer rounded-md text-grayscaled hover-text-colored my-1">
+                  <a key={1} title="League Stats Tracker" target="_blank" href="https://league-stats-tracker-v2.vercel.app/" className="border-2 border-transparent p-1 cursor-pointer rounded-md text-grayscaled hover-text-colored my-1">
                     <BoxArrowUpRight className="w-5" />
                   </a>]}
                   bgImageSrc={'/images/league_stats_tracker.png'}
                 />
                 <div className="text-body text-center w-full align-self-end my-2 md:my-5">
-                  <a href="https://github.com/richard-paredes/" className="btn-colored">Check out my GitHub</a>
+                  <a href="https://github.com/richard-paredes/" target="_blank" className="btn-colored">Check out my GitHub</a>
                 </div>
               </div>
             </div>
           </section>
-          <section id="contact" className="flex flex-col py-20 min-h-screen w-full md:w-5/6 my-auto mx-auto">
+          <section id="contact" className="flex flex-col py-20 w-full md:w-5/6 mx-auto my-20">
             <div className="rounded-lg flex flex-col my-auto text-grayscaled md:w-2/3">
               <p className="text-xl md:text-2xl special-text-colored mb-5 md:mb-10">
                 let's talk
@@ -168,8 +170,9 @@ export const Home = (): JSX.Element => {
             </div>
           </section>
         </main>
-        <footer className="w-full flex justify-center p-12 text-xs text-grayscaled">
-          <p>Developed with lots of <Heart className="inline" /> by yours truly.</p>
+        <footer className="w-full flex flex-col justify-center items-center text-center text-xs text-grayscaled">
+          <a href="https://github.com/richard-paredes/richardparedes" target="_blank" className="p-4 hover-text-colored">Developed with lots of <Heart className="inline" /> by yours truly.</a>
+          <CatFact />
         </footer>
       </div>
     </div>
