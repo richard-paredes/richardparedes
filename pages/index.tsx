@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image';
-import React, { useState } from 'react'
+import React from 'react'
 import { Sidebar } from '../components/Layout/Sidebar';
 import { Navbar } from '../components/Layout/Navbar';
 import { TabContent } from '../components/Tabs/TabContent';
@@ -8,9 +8,10 @@ import { Tabs } from '../components/Tabs/Tabs';
 import { RightChevron } from '../components/Icons/RightChevron';
 import { GitHub } from '../components/Icons/Logos/GitHub';
 import { BoxArrowUpRight } from '../components/Icons/BoxArrowUpRight';
+import { Card } from '../components/Cards/Card';
 
 export const Home = (): JSX.Element => {
-  const [activeTab, setActiveTab] = useState('');
+
   return (
     <div className="flex flex-col font-mono theme-bg transition overflow-auto">
       <Head>
@@ -42,15 +43,15 @@ export const Home = (): JSX.Element => {
               </div>
             </div>
           </section>
-          <section id="about" className="flex py-20 min-h-screen w-full md:w-5/6 my-auto mx-auto">
-            <div className="rounded-lg w-full flex flex-col md:flex-row my-auto overflow-auto sm:mx-auto md:mx-0 md:w-full">
-              <div className="z-0 relative w-full md:w-3/4 h-64 md:h-96 mt-auto mb-auto">
+          <section id="about" className="flex flex-col py-20 min-h-screen w-full md:w-5/6 mx-auto my-auto">
+            <h2 className="text-xl md:text-2xl w-full mb-5 special-text-colored">
+              about me
+            </h2>
+            <div className="rounded-lg w-full flex flex-col md:flex-row overflow-auto sm:mx-auto md:mx-0 md:w-full">
+              <div className="z-0 relative w-full md:w-3/4 h-64 md:h-96 my-auto">
                 <Image alt="Richard Paredes" src="/images/me.jpg" layout="fill" objectFit="contain" className="rounded-lg" />
               </div>
-              <div className="my-5 flex flex-col container px-4 text-grayscaled">
-                <h2 className="text-xl md:text-2xl mb-5 md:mb-10 special-text-colored">
-                  about me
-                </h2>
+              <div className="flex flex-col container md:px-4 text-grayscaled my-5 md:my-0">
                 <p className="text-body mb-5 md:mb-10">
                   Hi-ya!
                   My name is Richard and I'm passionate about developing web and XR applications. My journey into software development began back when I was a wee lad trying to install mods for my favorite game, <a href="https://thewitcher.com/en/witcher3" target="_blank" className="hyperlink">The Witcher 3: Wild Hunt</a>. After many manual script merge attempts and corrupted game saves, I realized I really enjoy digging deep and working with computers to make magical things happen.
@@ -114,58 +115,55 @@ export const Home = (): JSX.Element => {
               </Tabs>
             </div>
           </section>
-          <section id="projects" className="flex flex-col py-20 min-h-screen w-full my-auto mx-auto">
+          <section id="projects" className="flex flex-col py-20 min-h-screen w-full md:w-5/6 my-auto mx-auto">
             <div className="my-auto text-grayscaled">
-              <h2 className="text-xl md:text-2xl text-center mb-5 md:mb-10 special-text-colored">
+              <h2 className="text-xl md:text-2xl mb-5 md:mb-10 special-text-colored">
                 things i've built
               </h2>
-              <div className="flex flex-col">
-                <div className="relative flex flex-col-reverse my-12 w-full md:h-96">
-                  <div className="block md:w-1/2 xl:w-2/5 z-10 my-auto mx-auto">
-                    <div className="flex flex-col rounded-md shadow-lg bg-grayscaled-soft border-b-4 md:border-b-0 md:border-l-4 border-colored">
-                      <div className="mx-6 my-4">
-                        <div className="font-medium text-base text-contrast mb-4">Lyrical Listener</div>
-                        <p className="font-normal text-gray-dark text-sm mb-2">
-                        The days of manually searching for song lyrics are over. With this minimalistic web app, sing along to the lyrics of those awesome tunes on Spotify. 
-                      </p>
-                      </div>
-                      <div className="mx-6 mb-2 flex flex-col">
-                        <div className="flex-grow text-xs text-grayscaled">
-                          <p>Built with:</p>
-                          <span className="mr-1">React</span>
-                          <span className="m-1">NextJS</span>
-                          <span className="m-1">Chakra-UI</span>
-                          <span className="m-1">ASP.NET</span>
-                          <span className="ml-1">Spotify API</span>
-                        </div>
-                        <div className="self-end text-right flex">
-                          <GitHub className="w-5 m-2  stroke-colored cursor-pointer" />
-                          <BoxArrowUpRight className="w-5 m-2 text-colored cursor-pointer" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="w-full hidden md:block opacity-80 dark:opacity-50 rounded-md bg-colored">
-                    <Image src="/images/lyrical_listener.png" layout="fill" objectFit="contain" />
-                  </div>
-                  <div className="relative h-full md:hidden">
-                    <Image src="/images/lyrical_listener.png" layout="responsive" width="960" height="461" />
-                  </div>
+              <div className="flex flex-col flex-wrap">
+                <Card
+                  heading={"Lyrical Listener"}
+                  description={"The days of manually searching for song lyrics are over. With this minimalistic web app, sing along to the lyrics of those awesome tunes on Spotify."}
+                  technologies={['React', 'Chakra-UI', 'ASP.NET', 'Spotify API']}
+                  links={[<a key={0} title="GitHub" className="border-2 border-transparent p-1 cursor-pointer rounded-md stroke-grayscaled hover-stroke-colored my-1">
+                    <GitHub className="w-5" />
+                  </a>,
+                  <a key={1} title="Lyrical Listener" className="border-2 border-transparent p-1 cursor-pointer rounded-md text-grayscaled hover-text-colored my-1">
+                    <BoxArrowUpRight className="w-5" />
+                  </a>]}
+                  bgImageSrc={'/images/lyrical_listener.png'}
+                />
+                <Card
+                  heading={"League of Legends Stats Tracker"}
+                  description={"Review some of your recent League of Legends gameplay statistics. Displays your rank status, as well as data visualizations for your last played match."}
+                  technologies={['React', 'TailwindCSS', 'Next.JS', 'Riot Games API']}
+                  links={[<a key={0} title="GitHub" className="border-2 border-transparent p-1 cursor-pointer rounded-md stroke-grayscaled hover-stroke-colored my-1">
+                    <GitHub className="w-5" />
+                  </a>,
+                  <a key={1} title="League Stats Tracker" className="border-2 border-transparent p-1 cursor-pointer rounded-md text-grayscaled hover-text-colored my-1">
+                    <BoxArrowUpRight className="w-5" />
+                  </a>]}
+                  bgImageSrc={'/images/league_stats_tracker.png'}
+                />
+                <div className="text-body text-center w-full align-self-end my-2 md:my-5">
+                  <a href="https://github.com/richard-paredes/" className="btn-colored">Check out my GitHub</a>
                 </div>
               </div>
             </div>
           </section>
-          <section id="contact" className="md:px-32 py-32 min-h-screen">
-            <div className=" rounded-lg md:p-20 my-auto">
-              <h3 className="text-xl text-emerald-600 dark:text-emerald-200 mb-10">
-                Hello, world!
-              </h3>
-              <h2 className="text-4xl font-bold text-emerald-600 mb-5 dark:text-emerald-400">
-                I'm Richard Paredes.
-              </h2>
-              <h3 className="text-4xl text-gray-900 dark:text-gray-400">
-                Let's get in touch!
-              </h3>
+          <section id="contact" className="flex flex-col py-20 min-h-screen w-full md:w-5/6 my-auto mx-auto">
+            <div className="rounded-lg flex flex-col my-auto text-grayscaled md:w-2/3">
+              <p className="text-xl md:text-2xl special-text-colored mb-5 md:mb-10">
+                let's talk
+              </p>
+              <div className="">
+                <p className="text-body my-4 md:my-10">
+                  So, you've got to know a bit about me. Let me get to know you! I enjoy talking about virtually anything, especially tech-related goodies. If you have a project you want me to help with, reach out to me and I'll get back to you as soon as possible.
+              </p>
+                <div className="text-body w-full align-self-end my-2 md:my-5">
+                  <a href="mailto:richard.o.paredes@gmail.com" className="btn-colored">Contact me</a>
+                </div>
+              </div>
             </div>
           </section>
         </main>
