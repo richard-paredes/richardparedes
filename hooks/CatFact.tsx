@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { CatFactApiResponse } from '../types/CatFactApiResponse';
 
-export const CatFact: React.FC = () => {
-  const [fetching, setFetching] = useState(false);
+export const useCatFact = () => {
+  const [isFetching, setFetching] = useState(false);
   const [catFact, setCatFact] = useState('');
   useEffect(() => {
     if (catFact) return;
@@ -18,6 +18,5 @@ export const CatFact: React.FC = () => {
       .finally(() => setFetching(false));
   }, []);
   
-  if (fetching) return <div className="w-4 h-4 animate-pulse rounded-full bg-grayscaled"></div>;
-  return catFact ? <p className="my-2 text-xs">pssst did you know: {catFact}</p> : null;
+  return { isFetching, catFact };
 }

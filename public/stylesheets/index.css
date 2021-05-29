@@ -79,3 +79,7 @@
     @apply p-0 px-2 rounded-md uppercase border-l-2 border-r-2 border-grayscaled font-semibold m-1 md:m-2;
   }
 }
+
+.screen-80 {
+  min-height: 80vh;
+}

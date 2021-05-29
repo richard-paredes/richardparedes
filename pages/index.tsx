@@ -10,9 +10,11 @@ import { GitHub } from '../components/Icons/Logos/GitHub';
 import { BoxArrowUpRight } from '../components/Icons/BoxArrowUpRight';
 import { Card } from '../components/Cards/Card';
 import { Heart } from '../components/Icons/Heart';
-import { CatFact } from '../components/CatFact';
+import { useCatFact } from '../hooks/CatFact';
 
 export const Home = (): JSX.Element => {
+  const {isFetching, catFact} = useCatFact();
+
   return (
     <div className="flex flex-col font-mono theme-bg transition overflow-auto">
       <Head>
@@ -36,24 +38,24 @@ export const Home = (): JSX.Element => {
               <p className="text-body my-4 md:my-10">
                 I'm a software engineer situated in Houston, Texas who loves to build applications for people. At the moment, I'm a full-stack web developer at <a href="https://www.hcss.com/" target="_blank" className="hyperlink">HCSS</a>, creating robust and scalable software for the construction industry.
               </p>
-              <p className="text-body my-4">
+              <p className="text-body my-4 mb-10">
                 Looking for some help, or just want to chat? Feel free to reach out, I'm always happy to make new friends.
               </p>
-              <div className="text-body w-full align-self-end my-2 md:my-5">
+              <div className="text-body w-full align-self-end my-2 flex">
                 <a href="mailto:richard.o.paredes@gmail.com" className="btn-colored">Contact me</a>
               </div>
             </div>
           </section>
           <section id="about" className="flex flex-col py-20 min-h-screen w-full md:w-5/6 mx-auto my-auto">
-            <div className="my-auto">
-              <h2 className="text-xl md:text-2xl w-full mb-5 special-text-colored">
+            <div className="contents">
+              <h2 className="text-xl md:text-2xl w-full mb-5 md:mb-10 special-text-colored">
                 about me
-            </h2>
-              <div className="rounded-lg w-full flex flex-col md:flex-row overflow-auto sm:mx-auto md:mx-0 md:w-full">
-                <div className="z-0 relative w-full md:w-3/4 h-64 md:h-96 my-auto">
+              </h2>
+              <div className="rounded-lg w-full flex flex-col xl:flex-row overflow-auto sm:mx-auto md:mx-0 md:w-full">
+                <div className="z-0 relative w-full md:w-3/4 h-64 md:h-96 xl:my-auto">
                   <Image alt="Richard Paredes" src="/images/me.jpg" layout="fill" objectFit="contain" className="rounded-lg" />
                 </div>
-                <div className="flex flex-col container md:px-4 text-grayscaled my-5 md:my-0">
+                <div className="flex flex-col container md:px-4 text-grayscaled my-5 xl:my-0">
                   <p className="text-body mb-5 md:mb-10">
                     Hi-ya!
                   My name is Richard and I'm passionate about developing web and XR applications. My journey into software development began back when I was a wee lad trying to install mods for my favorite game, <a href="https://thewitcher.com/en/witcher3" target="_blank" className="hyperlink">The Witcher 3: Wild Hunt</a>. After many manual script merge attempts and corrupted game saves, I realized I really enjoy digging deep and working with computers to make magical things happen.
@@ -125,6 +127,7 @@ export const Home = (): JSX.Element => {
               </h2>
               <div className="flex flex-col flex-wrap">
                 <Card
+                  className="mb-12"
                   heading={"Lyrical Listener"}
                   description={"The days of manually searching for song lyrics are over. With this minimalistic web app, sing along to the lyrics of those awesome tunes on Spotify."}
                   technologies={['React', 'Chakra-UI', 'ASP.NET', 'Spotify API']}
@@ -137,6 +140,7 @@ export const Home = (): JSX.Element => {
                   bgImageSrc={'/images/lyrical_listener.png'}
                 />
                 <Card
+                  className="my-12 mb-10 md:my-24"
                   heading={"League of Legends Stats Tracker"}
                   description={"Review some of your recent League of Legends gameplay statistics. Displays your rank status, as well as data visualizations for your last played match."}
                   technologies={['React', 'TailwindCSS', 'Next.JS', 'Riot Games API']}
@@ -148,22 +152,22 @@ export const Home = (): JSX.Element => {
                   </a>]}
                   bgImageSrc={'/images/league_stats_tracker.png'}
                 />
-                <div className="text-body text-center w-full align-self-end my-2 md:my-5">
+                <div className="text-body text-center w-full align-self-end my-2 justify-center flex">
                   <a href="https://github.com/richard-paredes/" target="_blank" className="btn-colored">Check out my GitHub</a>
                 </div>
               </div>
             </div>
           </section>
-          <section id="contact" className="flex flex-col py-20 w-full md:w-5/6 mx-auto my-20">
+          <section id="contact" className="flex flex-col py-20 w-full screen-80 md:w-5/6 mx-auto my-20">
             <div className="rounded-lg flex flex-col my-auto text-grayscaled md:w-2/3">
-              <p className="text-xl md:text-2xl special-text-colored mb-5 md:mb-10">
+              <h2 className="text-xl md:text-2xl special-text-colored mb-5 md:mb-10">
                 let's talk
-              </p>
+              </h2>
               <div className="">
-                <p className="text-body my-4 md:my-10">
+                <p className="text-body mb-10">
                   So, you've got to know a bit about me. Let me get to know you! I enjoy talking about virtually anything, especially tech-related goodies. If you have a project you want me to help with, reach out to me and I'll get back to you as soon as possible.
               </p>
-                <div className="text-body w-full align-self-end my-2 md:my-5">
+                <div className="text-body w-full align-self-end flex">
                   <a href="mailto:richard.o.paredes@gmail.com" className="btn-colored">Contact me</a>
                 </div>
               </div>
@@ -171,8 +175,7 @@ export const Home = (): JSX.Element => {
           </section>
         </main>
         <footer className="w-full flex flex-col justify-center items-center text-center text-xs text-grayscaled">
-          <a href="https://github.com/richard-paredes/richardparedes" target="_blank" className="p-4 hover-text-colored">Developed with lots of <Heart className="inline" /> by yours truly.</a>
-          <CatFact />
+          <a href="https://github.com/richard-paredes/richardparedes" target="_blank" className="p-4 hover-text-colored">Developed with lots of <Heart className={"inline text-colored " + `${isFetching && 'animate-pulse'}`} /> by yours truly.</a>
         </footer>
       </div>
     </div>

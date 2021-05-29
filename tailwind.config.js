@@ -6,13 +6,13 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
+    screens: {
+      'xs': '475px',
+      ...defaultTheme.screens,
+      '3xl': '1600px',
+      '4xl': '1920px',
+    },
     extend: {
-      screens: {
-        'xs': '475px',
-        ...defaultTheme.screens,
-        '3xl': '1600px',
-        '4xl': '1920px',
-      },
       colors: {
         ...colors,
         colors: {

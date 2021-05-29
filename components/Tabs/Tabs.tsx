@@ -14,7 +14,7 @@ export const Tabs: React.FC<TabsProps> = ({ children }) => {
     setActiveTab(children[0].props.label);
   }, [children]);
 
-  return <div className="flex flex-col md:flex-row md:mx-16">
+  return <div className="flex flex-col md:flex-row ">
     <div className="flex flex-col flex-1 items-stretch text-body md:w-1/3 xl:w-1/4 overflow-x-auto">
       <ol className="z-0 mb-4 md:contents text-left flex flex-1 items-stretch text-grayscaled">
         {children.map(tabContent => {
