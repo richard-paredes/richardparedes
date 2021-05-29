@@ -52,7 +52,7 @@ export const Home = (): JSX.Element => {
                 about me
               </h2>
               <div className="rounded-lg w-full flex flex-col xl:flex-row overflow-auto sm:mx-auto md:mx-0 md:w-full">
-                <div className="z-0 relative w-full md:w-3/4 h-64 md:h-96 xl:my-auto">
+                <div className="z-0 relative w-full md:w-3/4 h-64 md:h-96 mx-auto xl:my-auto">
                   <Image alt="Richard Paredes" src="/images/me.jpg" layout="fill" objectFit="contain" className="rounded-lg" />
                 </div>
                 <div className="flex flex-col container md:px-4 text-grayscaled my-5 xl:my-0">
