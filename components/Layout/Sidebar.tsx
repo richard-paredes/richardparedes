@@ -8,7 +8,7 @@ export const Sidebar = () => {
       <a title="GitHub" target="_blank" href="https://github.com/richard-paredes/" className="border-2 border-transparent p-1 cursor-pointer rounded-md stroke-grayscaled hover-stroke-colored my-1">
         <GitHub className="w-6" />
       </a>
-      <a title="LinkedIn" target="_blank" href="https://www.linkedin.com/riparedes/" className="border-2 border-transparent p-1 cursor-pointer rounded-md stroke-grayscaled hover-stroke-colored my-1">
+      <a title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/riparedes/" className="border-2 border-transparent p-1 cursor-pointer rounded-md stroke-grayscaled hover-stroke-colored my-1">
         <LinkedIn className="w-6" />
       </a>
     </div>
