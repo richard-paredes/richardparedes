@@ -3,7 +3,7 @@ import Image from "next/image";
 
 /**
  *
- * @param {{className?: string, bgImageSrc: string, heading: string, description: string, technologies: string[], links: React.ReactElement[] }} props
+ * @param {{className?: string, bgImageSrc: string, bgImageAlt: string, heading: string, description: string, technologies: string[], links: React.ReactElement[] }} props
  * @returns {JSX.Element}
  */
 export const Card = ({
@@ -13,6 +13,7 @@ export const Card = ({
   technologies,
   links,
   bgImageSrc,
+  bgImageAlt,
 }) => {
   return (
     <div
@@ -52,6 +53,7 @@ export const Card = ({
           width="1000"
           height="1000"
           className="rounded-md object-fill border border-black dark:border-white"
+          alt={bgImageAlt}
         />
       </div>
     </div>

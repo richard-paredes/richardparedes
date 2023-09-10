@@ -18,9 +18,10 @@ export const About = () => {
         </div>
         <div className="flex flex-col container md:px-4 text-grayscaled my-5 xl:my-0">
           <p className="text-body mb-5 md:mb-10">
-            Hi-ya! My name is Richard and I'm passionate about developing web
-            and XR applications. My journey into software development began back
-            when I was a wee lad trying to install mods for my favorite game,{" "}
+            Hi-ya! My name is Richard and I&apos;m passionate about developing
+            web and XR applications. My journey into software development began
+            back when I was a wee lad trying to install mods for my favorite
+            game,{" "}
             <a
               href="https://thewitcher.com/en/witcher3"
               target="_blank"
@@ -33,7 +34,8 @@ export const About = () => {
             make magical things happen.
           </p>
           <p className="text-body mb-5 md:mb-10">
-            Since then, I've expanded my knowledge through various avenues: a{" "}
+            Since then, I&apos;ve expanded my knowledge through various avenues:
+            a{" "}
             <a
               href="https://redlabs.uh.edu"
               target="_blank"
@@ -57,8 +59,8 @@ export const About = () => {
             >
               personal projects
             </a>
-            . Right now, I'm honing my skills by developing RESTful APIs and
-            friendly interfaces for complex user management over at{" "}
+            . Right now, I&apos;m honing my skills by developing RESTful APIs
+            and friendly interfaces for complex user management over at{" "}
             <a
               href="https://www.hcss.com/"
               target="_blank"
@@ -69,7 +71,7 @@ export const About = () => {
             .
           </p>
           <p className="text-body mb-2 md:mb-5">
-            Here are some technologies I've picked up along the way:
+            Here are some technologies I&apos;ve picked up along the way:
           </p>
           <div className="flex text-black text-xs md:text-sm dark:text-white flex-wrap rounded-md">
             <span className="pill">Git</span>

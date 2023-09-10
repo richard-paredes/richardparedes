@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import { Card } from "@/components/Cards";
 import { GitHub } from "@/components/Icons/Logos";
 import { BoxArrowUpRight } from "@/components/Icons";
@@ -8,7 +6,7 @@ export const Projects = () => {
   return (
     <div className="my-auto text-grayscaled">
       <h2 className="text-xl md:text-2xl mb-5 md:mb-10 special-text-colored">
-        things i've built
+        things i&apos;ve built
       </h2>
       <div className="flex flex-col flex-wrap">
         <Card
@@ -39,6 +37,7 @@ export const Projects = () => {
             </a>,
           ]}
           bgImageSrc={"/images/lyrical_listener.png"}
+          bgImageAlt="Lyrical Listener"
         />
         <Card
           className="my-12 mb-10 md:my-24"
@@ -68,6 +67,7 @@ export const Projects = () => {
             </a>,
           ]}
           bgImageSrc={"/images/league_stats_tracker.png"}
+          bgImageAlt="League Stats Tracker"
         />
         <div className="text-body text-center w-full align-self-end my-2 justify-center flex">
           <a

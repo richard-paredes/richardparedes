@@ -5,7 +5,7 @@ export const Experience = () => {
   return (
     <div className="my-auto">
       <h2 className="text-xl md:text-2xl mb-5 md:mb-10 special-text-colored">
-        places i've worked
+        places i&apos;ve worked
       </h2>
       <Tabs>
         <TabContent label="HCSS">

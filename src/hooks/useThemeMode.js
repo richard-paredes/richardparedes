@@ -29,6 +29,7 @@ export const useThemeMode = () => {
       }
       setTheme(localStorage.getItem("theme"));
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [typeof window]);
 
   const toggleTheme = useCallback(() => {
@@ -40,7 +41,7 @@ export const useThemeMode = () => {
 
   useEffect(() => {
     updateThemeDisplay();
-  }, [theme]);
+  }, [theme, updateThemeDisplay]);
 
   return { theme, toggleTheme };
 };
