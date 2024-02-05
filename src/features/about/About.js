@@ -59,8 +59,8 @@ export const About = () => {
             >
               personal projects
             </a>
-            . Right now, I&apos;m honing my skills by developing RESTful APIs
-            and friendly interfaces for complex user management over at{" "}
+            . My previous experience includes developing RESTful APIs and
+            friendly interfaces for complex user management over at{" "}
             <a
               href="https://www.hcss.com/"
               target="_blank"
@@ -68,7 +68,9 @@ export const About = () => {
             >
               HCSS
             </a>
-            .
+            . Currently, I am honing my skills as a Software Engineer at
+            JPMorgan Chase, working on investment banking tools for internal
+            users, using .NET, React, and AWS.
           </p>
           <p className="text-body mb-2 md:mb-5">
             Here are some technologies I&apos;ve picked up along the way:
@@ -82,8 +84,11 @@ export const About = () => {
             <span className="pill">Node.JS</span>
             <span className="pill">React</span>
             <span className="pill">Unity</span>
-            <span className="pill">Microsoft Azure</span>
             <span className="pill">Next.JS</span>
+            <span className="pill">SQL Server</span>
+            <span className="pill">MySQL</span>
+            <span className="pill">Amazon Web Services</span>
+            <span className="pill">Microsoft Azure</span>
           </div>
         </div>
       </div>

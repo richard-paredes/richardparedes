@@ -8,6 +8,32 @@ export const Experience = () => {
         places i&apos;ve worked
       </h2>
       <Tabs>
+        <TabContent label="JPMorgan Chase">
+          <h2 className="text-base md:text-lg font-semibold text-grayscaled">
+            Software Enginer at{" "}
+            <a
+              href="https://www.jpmorganchase.com/"
+              target="_blank"
+              className="hyperlink"
+            >
+              JPMorgan Chase & Co.
+            </a>
+          </h2>
+          <h3 className="text-body text-grayscaled">April 2022 - Present</h3>
+          <ul className="text-body text-grayscaled my-5">
+            <li className="my-2">
+              <RightChevron className="inline w-2 stroke-grayscaled" /> Designed
+              and developed web-based investment banking tools, enabling
+              internal users to perform standard business operations.
+            </li>
+            <li className="my-2">
+              <RightChevron className="inline w-2 stroke-grayscaled" /> Worked
+              on modernizing web application using .NET6, MySQL, ASP.NET +
+              React, to be hosted on AWS ECS Fargate, provisioned via Terraform,
+              following a microservices architecture.
+            </li>
+          </ul>
+        </TabContent>
         <TabContent label="HCSS">
           <h2 className="text-base md:text-lg font-semibold text-grayscaled">
             Software Developer at{" "}
@@ -19,7 +45,7 @@ export const Experience = () => {
               Heavy Construction System Specialists, Inc.
             </a>
           </h2>
-          <h3 className="text-body text-grayscaled">Sept. 2019 - Present</h3>
+          <h3 className="text-body text-grayscaled">Sept. 2019 - April 2022</h3>
           <ul className="text-body text-grayscaled my-5">
             <li className="my-2">
               <RightChevron className="inline w-2 stroke-grayscaled" /> Designed
