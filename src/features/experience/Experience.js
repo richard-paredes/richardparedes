@@ -10,7 +10,7 @@ export const Experience = () => {
       <Tabs>
         <TabContent label="JPMorgan Chase">
           <h2 className="text-base md:text-lg font-semibold text-grayscaled">
-            Software Enginer at{" "}
+            Software Engineer II at{" "}
             <a
               href="https://www.jpmorganchase.com/"
               target="_blank"
