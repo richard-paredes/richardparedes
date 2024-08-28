@@ -19,9 +19,8 @@ export const About = () => {
         <div className="flex flex-col container md:px-4 text-grayscaled my-5 xl:my-0">
           <p className="text-body mb-5 md:mb-10">
             Hi-ya! My name is Richard and I&apos;m passionate about developing
-            web and XR applications. My journey into software development began
-            back when I was a wee lad trying to install mods for my favorite
-            game,{" "}
+            web applications. My journey into software development began back
+            when I was a wee lad trying to install mods for my favorite game,{" "}
             <a
               href="https://thewitcher.com/en/witcher3"
               target="_blank"
@@ -68,9 +67,9 @@ export const About = () => {
             >
               HCSS
             </a>
-            . Currently, I am honing my skills as a Software Engineer at
-            JPMorgan Chase, working on investment banking tools for internal
-            users, using .NET, React, and AWS.
+            . Currently, I am honing my skills as a Software Engineer II at
+            JPMorgan Chase, developing investment banking tools for internal
+            users, built using .NET, Python, React, and AWS.
           </p>
           <p className="text-body mb-2 md:mb-5">
             Here are some technologies I&apos;ve picked up along the way:
@@ -83,10 +82,14 @@ export const About = () => {
             <span className="pill">ASP.NET</span>
             <span className="pill">Node.JS</span>
             <span className="pill">React</span>
-            <span className="pill">Unity</span>
+            <span className="pill">CSS</span>
             <span className="pill">Next.JS</span>
             <span className="pill">SQL Server</span>
             <span className="pill">MySQL</span>
+            <span className="pill">DynamoDB</span>
+            <span className="pill">Docker</span>
+            <span className="pill">Kafka</span>
+            <span className="pill">DataDog</span>
             <span className="pill">Amazon Web Services</span>
             <span className="pill">Microsoft Azure</span>
           </div>
