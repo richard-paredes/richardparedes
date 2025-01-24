@@ -1,7 +1,7 @@
 export const ContactMe = () => {
   return (
     <div className="rounded-lg flex flex-col my-auto text-grayscaled md:w-2/3">
-      <h2 className="text-xl md:text-2xl special-text-colored mb-5 md:mb-10">
+      <h2 className="text-2xl text-[#66615e] font-bold border-b-4 self-baseline mb-10">
         let&apos;s talk
       </h2>
       <div className="">
@@ -12,7 +12,13 @@ export const ContactMe = () => {
           me and I&apos;ll get back to you as soon as possible.
         </p>
         <div className="text-body w-full align-self-end flex">
-          <a href="mailto:richard.o.paredes@gmail.com" className="btn-colored">
+          <a
+            href="mailto:richard.o.paredes@gmail.com"
+            className="mx-2 py-2 px-2 block
+          bg-[#c9c8c7]
+          rounded border-2 border-b-4 border-r-3 border-l-black/25 border-t-black/25 border-r-black border-b-black 
+          hover:font-semibold hover:bg-[#c9c8c7]/50"
+          >
             Contact me
           </a>
         </div>

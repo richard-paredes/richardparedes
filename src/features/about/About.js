@@ -3,7 +3,7 @@ import Image from "next/image";
 export const About = () => {
   return (
     <div className="contents">
-      <h2 className="text-xl md:text-2xl w-full mb-5 md:mb-10 special-text-colored">
+      <h2 className="text-2xl text-[#66615e] font-bold border-b-4 self-baseline mb-10">
         about me
       </h2>
       <div className="rounded-lg w-full flex flex-col xl:flex-row overflow-auto sm:mx-auto md:mx-0 md:w-full">
@@ -74,7 +74,7 @@ export const About = () => {
           <p className="text-body mb-2 md:mb-5">
             Here are some technologies I&apos;ve picked up along the way:
           </p>
-          <div className="flex text-black text-xs md:text-sm dark:text-white flex-wrap rounded-md">
+          <div className="flex gap-x-4 gap-y-2 text-black underline font-semibold text-[#949392] text-xs md:text-sm flex-wrap rounded-md uppercase">
             <span className="pill">Git</span>
             <span className="pill">C#</span>
             <span className="pill">TypeScript</span>

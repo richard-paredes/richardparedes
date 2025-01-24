@@ -10,38 +10,38 @@ import { CatFact } from "@/features/catFact/CatFact";
 
 const Home = async () => {
   return (
-    <div className="flex flex-col font-mono theme-bg transition overflow-auto">
+    <div className="flex flex-col font-mono theme-bg transition">
       <Navbar />
       <Sidebar />
-      <div className="w-3/4 m-auto align-center ">
-        <main className="w-full">
+      <div className="w-full text-md">
+        <main className="container px-10">
           <section
             id="hello-world"
-            className="w-full flex py-20 xl:py-32 min-h-screen md:w-3/5 xl:w-3/4"
+            className="flex flex-col py-20 min-h-screen w-5/6 mx-auto"
           >
             <Introduction />
           </section>
           <section
             id="about"
-            className="flex flex-col py-20 min-h-screen w-full md:w-5/6 mx-auto my-auto"
+            className="flex flex-col py-20 min-h-screen w-5/6 mx-auto my-auto"
           >
             <About />
           </section>
           <section
             id="experience"
-            className="flex flex-col py-20 min-h-screen w-full md:w-5/6 my-auto mx-auto"
+            className="flex flex-col py-20 min-h-screen w-5/6 my-auto mx-auto"
           >
             <Experience />
           </section>
           <section
             id="projects"
-            className="flex flex-col py-20 min-h-screen w-full md:w-5/6 my-auto mx-auto"
+            className="flex flex-col py-20 min-h-screen w-5/6 my-auto mx-auto"
           >
             <Projects />
           </section>
           <section
             id="contact"
-            className="flex flex-col py-20 w-full screen-80 md:w-5/6 mx-auto my-20"
+            className="flex flex-col py-20 screen-80 w-5/6 mx-auto my-20"
           >
             <ContactMe />
           </section>

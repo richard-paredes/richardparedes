@@ -10,22 +10,14 @@ export const Toggle = ({ checked, onToggle }) => {
         <div className="relative">
           <input
             type="checkbox"
-            className="sr-only"
+            className="sr-only checked:bg-gray-100 dark:checked:bg-emerald-400 checked:translate-x-64"
             onClick={onToggle}
             defaultChecked={checked}
           />
-          <div className="block bg-gray-300 dark:bg-gray-800 w-14 h-8 rounded-full"></div>
-          <div className="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
+          <div className="block bg-gray-300 dark:bg-gray-800 w-10 h-6 rounded-full"></div>
+          <div className="dot absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition"></div>
         </div>
       </label>
-      <style jsx>{`
-        input:checked ~ .dot {
-          transform: translateX(100%);
-          background-color: ${theme === "dark"
-            ? colors.emerald["400"]
-            : colors.gray["100"]};
-        }
-      `}</style>
     </div>
   );
 };

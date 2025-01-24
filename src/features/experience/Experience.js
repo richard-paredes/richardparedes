@@ -3,8 +3,8 @@ import { Tabs, TabContent } from "@/components/Tabs";
 
 export const Experience = () => {
   return (
-    <div className="my-auto">
-      <h2 className="text-xl md:text-2xl mb-5 md:mb-10 special-text-colored">
+    <div className="my-auto flex flex-col">
+      <h2 className="text-2xl text-[#66615e] font-bold border-b-4 self-baseline mb-10">
         places i&apos;ve worked
       </h2>
       <Tabs>

@@ -18,7 +18,7 @@ export const Card = ({
   return (
     <div
       className={
-        "relative flex flex-col-reverse justify-center w-full md:h-96 container" +
+        "relative flex flex-col-reverse justify-center w-full md:h-96" +
         className
       }
     >

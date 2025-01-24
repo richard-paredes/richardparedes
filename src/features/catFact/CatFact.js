@@ -2,7 +2,8 @@ import { Heart } from "@/components/Icons";
 import { getCatFact } from "@/services/catFacts";
 
 export const CatFact = async () => {
-  const catFact = await getCatFact();
+  // const catFact = await getCatFact();
+  const catFact = "";
   return (
     <div>
       <a

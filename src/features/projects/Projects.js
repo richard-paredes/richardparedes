@@ -4,8 +4,8 @@ import { BoxArrowUpRight } from "@/components/Icons";
 
 export const Projects = () => {
   return (
-    <div className="my-auto text-grayscaled">
-      <h2 className="text-xl md:text-2xl mb-5 md:mb-10 special-text-colored">
+    <div className="my-auto text-grayscaled flex flex-col">
+      <h2 className="text-2xl text-[#66615e] font-bold border-b-4 self-baseline mb-10">
         things i&apos;ve built
       </h2>
       <div className="flex flex-col flex-wrap">
@@ -73,7 +73,10 @@ export const Projects = () => {
           <a
             href="https://github.com/richard-paredes/"
             target="_blank"
-            className="btn-colored"
+            className="mx-2 py-2 px-2 block
+          bg-[#c9c8c7]
+          rounded border-2 border-b-4 border-r-3 border-l-black/25 border-t-black/25 border-r-black border-b-black 
+          hover:font-semibold hover:bg-[#c9c8c7]/50"
           >
             Check out my GitHub
           </a>
