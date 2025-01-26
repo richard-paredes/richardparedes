@@ -13,14 +13,10 @@ export const Introduction = () => {
         I&apos;m a software engineer situated in Houston, Texas who loves to
         build applications for people. At the moment, I&apos;m a full-stack
         software developer at{" "}
-        <a
-          href="https://www.jpmorganchase.com/"
-          target="_blank"
-          className="hyperlink"
-        >
-          JPMorgan Chase & Co.
+        <a href="https://www.citi.com/" target="_blank" className="hyperlink">
+          Citi
         </a>
-        , creating robust and scalable software for the investment banking
+        , creating robust and scalable software for the commodities trading
         industry.
       </p>
       <p className="text-body my-4 mb-10">
