@@ -3,11 +3,38 @@ import { Tabs, TabContent } from "@/components/Tabs";
 
 export const Experience = () => {
   return (
-    <div className="my-auto flex flex-col">
+    <div className="p-10 border border-black border-b-4 border-r-4 bg-white my-auto">
       <h2 className="text-2xl text-[#66615e] font-bold border-b-4 self-baseline mb-10">
         places i&apos;ve worked
       </h2>
       <Tabs>
+        <TabContent label="Citi">
+          <h2 className="text-base md:text-lg font-semibold text-grayscaled">
+            Assistant Vice President (Software Engineer III) at{" "}
+            <a
+              href="https://www.citi.com/"
+              target="_blank"
+              className="hyperlink"
+            >
+              Citi
+            </a>
+          </h2>
+          <h3 className="text-body text-grayscaled">December 2024 - Present</h3>
+          <ul className="text-body text-grayscaled my-5">
+            <li className="my-2">
+              <RightChevron className="inline w-2 stroke-grayscaled" /> Designed
+              and developed a web-based regression tool using React, Ag-Grid,
+              and Flask to identify and report discrepancies in quant library
+              updates, ensuring data integrity and accuracy.
+            </li>
+            <li className="my-2">
+              <RightChevron className="inline w-2 stroke-grayscaled" />{" "}
+              Developed desktop and web-based tools using Python and Flask for
+              risk forecasting, PnL calculations, and report generation,
+              providing traders with actionable insights.
+            </li>
+          </ul>
+        </TabContent>
         <TabContent label="JPMorgan Chase">
           <h2 className="text-base md:text-lg font-semibold text-grayscaled">
             Software Engineer II at{" "}
@@ -19,18 +46,33 @@ export const Experience = () => {
               JPMorgan Chase & Co.
             </a>
           </h2>
-          <h3 className="text-body text-grayscaled">April 2022 - Present</h3>
+          <h3 className="text-body text-grayscaled">
+            April 2022 - November 2024
+          </h3>
           <ul className="text-body text-grayscaled my-5">
             <li className="my-2">
               <RightChevron className="inline w-2 stroke-grayscaled" /> Designed
               and developed web-based investment banking tools, enabling
-              internal users to perform standard business operations.
+              internal users to efficiently manage and track client data.
             </li>
             <li className="my-2">
-              <RightChevron className="inline w-2 stroke-grayscaled" /> Worked
-              on modernizing web application using .NET6, MySQL, ASP.NET +
-              React, to be hosted on AWS ECS Fargate, provisioned via Terraform,
-              following a microservices architecture.
+              <RightChevron className="inline w-2 stroke-grayscaled" />{" "}
+              Modernized a web application from .NET Core 3.1 to .NET 8, MySQL,
+              DynamoDB, SQS, S3, ASP.NET, and React. Built using microservices
+              architecture, deployed with AWS ECS Fargate, and provisioned via
+              Terraform.
+            </li>
+            <li className="my-2">
+              <RightChevron className="inline w-2 stroke-grayscaled" />{" "}
+              Developed a data pipeline for ingesting and processing foreign
+              exchange spot and forward rates for index calculations using AWS
+              S3, AWS Glue, Python, and PostgreSQL.
+            </li>
+            <li className="my-2">
+              <RightChevron className="inline w-2 stroke-grayscaled" />{" "}
+              Onboarded and mentored three engineers, including remote team
+              members in the UK, ensuring effective collaboration across time
+              zones and delivering high-quality software.
             </li>
           </ul>
         </TabContent>
@@ -49,28 +91,28 @@ export const Experience = () => {
           <ul className="text-body text-grayscaled my-5">
             <li className="my-2">
               <RightChevron className="inline w-2 stroke-grayscaled" /> Designed
-              and developed web-based reporting tools, allowing customers track
-              historical changes related to billing and better manage their
-              users.
+              and built web-based reporting tools enabling customers to track
+              billing history and manage user subscriptions with ease.
             </li>
             <li className="my-2">
               <RightChevron className="inline w-2 stroke-grayscaled" />{" "}
-              Collaborated with UI and UX teams to redesign the previous login
-              page, and introduced React to replace the legacy Angular codebase.
+              Redesigned the login page in collaboration with UI/UX teams,
+              replacing the legacy Razor pages and Angular codebase with React
+              for improved performance and maintainability.
             </li>
             <li className="my-2">
-              <RightChevron className="inline w-2 stroke-grayscaled" /> Elevated
-              existing web APIs by incorporating versioning, standardized
-              responses, unit test coverage, and RESTful standards.
+              <RightChevron className="inline w-2 stroke-grayscaled" /> Enhanced
+              web APIs by implementing versioning, standardized responses,
+              RESTful best practices, and comprehensive unit test coverage.
             </li>
             <li className="my-2">
               <RightChevron className="inline w-2 stroke-grayscaled" />{" "}
-              Contributed in code reviews with team members and managed release
-              and deployments using Microsoft Azure.
+              Conducted code reviews and managed releases and deployments using
+              Microsoft Azure, ensuring code quality and stability.
             </li>
           </ul>
         </TabContent>
-        <TabContent label="UH">
+        <TabContent label="University of Houston">
           <h2 className="text-base md:text-lg font-semibold text-grayscaled">
             Game Developer at{" "}
             <a
@@ -85,23 +127,23 @@ export const Experience = () => {
           <ul className="text-body text-grayscaled my-5">
             <li className="my-2">
               <RightChevron className="inline w-2 stroke-grayscaled" />{" "}
-              Participated in a entrepreneurship program, Pre-RED Labs, to
-              kickstart a start-up focused on helping people with self-discovery
-              through interactive games.
-            </li>
-            <li className="my-2">
-              <RightChevron className="inline w-2 stroke-grayscaled" /> Worked
-              with a partner to flesh out interactive scenarios for use in
-              analyzing players based on behaviors.
+              Participated in the Pre-RED Labs entrepreneurship program,
+              developing a startup concept centered on self-discovery through
+              psychologically driven interactive games.
             </li>
             <li className="my-2">
               <RightChevron className="inline w-2 stroke-grayscaled" />{" "}
-              Developed a primitive 3D game prototype in Unity with dialogue
+              Collaborated with a partner to design interactive scenarios for
+              analyzing player behavior through in-game decision-making.
+            </li>
+            <li className="my-2">
+              <RightChevron className="inline w-2 stroke-grayscaled" />{" "}
+              Developed a 3D game prototype in Unity, implementing a dialogue
               system and character animations.
             </li>
           </ul>
         </TabContent>
-        <TabContent label="UT">
+        <TabContent label="University of Texas at Austin">
           <h2 className="text-base md:text-lg font-semibold text-grayscaled">
             Undergraduate Research Mentor at{" "}
             <a

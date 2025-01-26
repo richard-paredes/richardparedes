@@ -2,21 +2,21 @@ import Image from "next/image";
 
 export const About = () => {
   return (
-    <div className="contents">
+    <div className="p-10 border border-black border-b-4 border-r-4 bg-white">
       <h2 className="text-2xl text-[#66615e] font-bold border-b-4 self-baseline mb-10">
         about me
       </h2>
-      <div className="rounded-lg w-full flex flex-col xl:flex-row overflow-auto sm:mx-auto md:mx-0 md:w-full">
-        <div className="z-0 relative w-full my-auto px-5">
+      <div className="w-full flex flex-col xl:flex-row overflow-auto sm:mx-auto md:mx-0 md:w-full">
+        <div className="z-0 relative container-xs my-auto px-5">
           <Image
             alt="Richard Paredes"
             src="/images/me.png"
             width="1000"
             height="1000"
-            className="rounded-md object-contain"
+            className="border-2 border-black border-b-6 border-r-4 object-contain"
           />
         </div>
-        <div className="flex flex-col container md:px-4 text-grayscaled my-5 xl:my-0">
+        <div className="p-4 flex flex-col container md:px-4 text-grayscaled my-5 xl:my-0">
           <p className="text-body mb-5 md:mb-10">
             Hi-ya! My name is Richard and I&apos;m passionate about developing
             web applications. My journey into software development began back
@@ -68,13 +68,13 @@ export const About = () => {
               HCSS
             </a>
             . Currently, I am honing my skills as a Software Engineer II at
-            JPMorgan Chase, developing investment banking tools for internal
-            users, built using .NET, Python, React, and AWS.
+            Citi, developing risk-analysis tools for Commodity traders, using
+            .NET, Python, & React.
           </p>
           <p className="text-body mb-2 md:mb-5">
             Here are some technologies I&apos;ve picked up along the way:
           </p>
-          <div className="flex gap-x-4 gap-y-2 text-black underline font-semibold text-[#949392] text-xs md:text-sm flex-wrap rounded-md uppercase">
+          <div className="flex gap-x-4 gap-y-2 underline font-semibold text-[#949392] text-xs md:text-sm flex-wrap rounded-md uppercase">
             <span className="pill">Git</span>
             <span className="pill">C#</span>
             <span className="pill">TypeScript</span>
@@ -92,6 +92,7 @@ export const About = () => {
             <span className="pill">DataDog</span>
             <span className="pill">Amazon Web Services</span>
             <span className="pill">Microsoft Azure</span>
+            <span className="pill">RedHat OpenShift</span>
           </div>
         </div>
       </div>

@@ -4,14 +4,13 @@ import { BoxArrowUpRight } from "@/components/Icons";
 
 export const Projects = () => {
   return (
-    <div className="my-auto text-grayscaled flex flex-col">
+    <div className="p-10 border border-black border-b-4 border-r-4 bg-white my-auto">
       <h2 className="text-2xl text-[#66615e] font-bold border-b-4 self-baseline mb-10">
         things i&apos;ve built
       </h2>
-      <div className="flex flex-col flex-wrap">
+      <div className="flex flex-col flex-wrap gap-12">
         <Card
-          className="mb-12"
-          heading={"Lyrical Listener"}
+          heading="Lyrical Listener"
           description={
             "The days of manually searching for song lyrics are over. With this minimalistic web app, sing along to the lyrics of those awesome tunes on Spotify."
           }
@@ -40,7 +39,6 @@ export const Projects = () => {
           bgImageAlt="Lyrical Listener"
         />
         <Card
-          className="my-12 mb-10 md:my-24"
           heading={"League of Legends Stats Tracker"}
           description={
             "Review some of your recent League of Legends gameplay statistics. Displays your rank status, as well as data visualizations for your last played match."
@@ -54,7 +52,7 @@ export const Projects = () => {
               href="https://github.com/richard-paredes/league-stats-tracker-v2"
               className="border-2 border-transparent p-1 cursor-pointer rounded-md stroke-grayscaled hover-stroke-colored my-1"
             >
-              <GitHub className="w-5" />
+              <GitHub className="w-5 stroke-[#66615e] stroke-2" />
             </a>,
             <a
               key={1}
@@ -63,7 +61,7 @@ export const Projects = () => {
               href="https://league-stats-tracker-v2.vercel.app/"
               className="border-2 border-transparent p-1 cursor-pointer rounded-md text-grayscaled hover-text-colored my-1"
             >
-              <BoxArrowUpRight className="w-5" />
+              <BoxArrowUpRight className="w-5 stroke-2" />
             </a>,
           ]}
           bgImageSrc={"/images/league_stats_tracker.png"}

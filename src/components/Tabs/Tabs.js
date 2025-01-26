@@ -48,12 +48,12 @@ export const Tabs = ({ children }) => {
 
   return (
     <div className="flex flex-col md:flex-row ">
-      <div className="flex flex-col flex-1 items-stretch text-body md:w-1/3 xl:w-1/4 overflow-x-auto">
-        <ol className="z-0 mb-4 md:contents text-left flex flex-1 items-stretch text-grayscaled">
+      <div className="overflow-x-auto">
+        <ol className="flex flex-col gap-2 items-stretch">
           {renderTabHeaders()}
         </ol>
       </div>
-      <div className="container relative md:w-2/3 xl:w-3/4 my-5 md:my-0 md:px-5 rounded-r-md md:h-96 overflow-auto">
+      <div className="mx-2 container relative px-8 border overflow-auto">
         {renderTabContents()}
       </div>
     </div>

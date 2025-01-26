@@ -1,6 +1,6 @@
 export const ContactMe = () => {
   return (
-    <div className="rounded-lg flex flex-col my-auto text-grayscaled md:w-2/3">
+    <div className="p-10 border border-black border-b-4 border-r-4 bg-white my-auto">
       <h2 className="text-2xl text-[#66615e] font-bold border-b-4 self-baseline mb-10">
         let&apos;s talk
       </h2>

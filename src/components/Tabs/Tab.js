@@ -12,11 +12,9 @@ export const Tab = ({ label, activeTab, onClick }) => {
     <li
       role="tab"
       onClick={handleClick}
-      className={`w-full transition flex border-b-4 md:border-b-0 md:border-l-4 px-12 py-2 md:h-full ${
-        activeTab === label
-          ? "border-colored bg-colored bg-opacity-10 dark:bg-opacity-10"
-          : "border-grayscaled-soft"
-      } hover-bg-colored hover:text-colored`}
+      className={`transition flex border border-b-4 border-r-2 px-12 py-2 h-24 bg-[#c9c8c7] ${
+        activeTab === label ? "shadow font-bold bg-[#c9c8c7]/50" : ""
+      } hover:font-semibold`}
     >
       <span className="my-auto uppercase">{label}</span>
     </li>
