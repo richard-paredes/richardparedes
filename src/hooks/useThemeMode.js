@@ -17,6 +17,7 @@ export const useThemeMode = () => {
     }
   }, []);
 
+  const windowIsDefined = typeof window !== "undefined";
   useEffect(() => {
     if (typeof window !== "undefined") {
       if (!("theme" in localStorage)) {
@@ -29,7 +30,7 @@ export const useThemeMode = () => {
       }
       setTheme(localStorage.getItem("theme"));
     }
-  }, [typeof window]);
+  }, [windowIsDefined]);
 
   const toggleTheme = useCallback(() => {
     const currentTheme = localStorage.getItem("theme") ?? "light";
