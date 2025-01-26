@@ -5,7 +5,7 @@ export const CatFact = async () => {
   // const catFact = await getCatFact();
   const catFact = "";
   return (
-    <div>
+    <div className="mb-10 lg:mb-0">
       <a
         href="https://github.com/richard-paredes/richardparedes"
         target="_blank"

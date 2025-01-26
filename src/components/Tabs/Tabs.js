@@ -37,8 +37,8 @@ export const Tabs = ({ children }) => {
         <div
           key={label}
           className={`${
-            activeTab === label ? "block" : "top-0 left-0 absolute hidden"
-          } pr-4`}
+            activeTab === label ? "block p-4" : "top-0 left-0 absolute hidden"
+          }`}
         >
           {tabContent}
         </div>
@@ -48,12 +48,12 @@ export const Tabs = ({ children }) => {
 
   return (
     <div className="flex flex-col md:flex-row ">
-      <div className="overflow-x-auto">
-        <ol className="flex flex-col gap-2 items-stretch">
+      <div className="flex flex-col items-stretch text-body md:w-1/3 xl:w-1/4 overflow-x-auto">
+        <ol className="z-0 mb-4 md:contents text-left flex gap-x-2 flex-1 items-stretch text-grayscaled">
           {renderTabHeaders()}
         </ol>
       </div>
-      <div className="mx-2 container relative px-8 border overflow-auto">
+      <div className="xl:mx-2 container relative px-8 border overflow-auto">
         {renderTabContents()}
       </div>
     </div>

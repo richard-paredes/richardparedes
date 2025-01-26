@@ -4,12 +4,12 @@ export const Introduction = () => {
       <p className="text-2xl text-[#66615e] font-bold border-b-4 self-baseline mb-10">
         hello, world!
       </p>
-      <h1 className="text-3xl md:text-5xl text-grayscaled my-2 md:my-5">
+      <h1 className="text-3xl lg:text-5xl text-grayscaled my-2 lg:my-5">
         I&apos;m <span className="font-bold text-red-900">Richard Paredes</span>
         .
       </h1>
-      <p className="text-2xl md:text-4xl">(-:</p>
-      <p className="text-body my-4 md:my-10">
+      <p className="text-2xl lg:text-4xl">(-:</p>
+      <p className="text-body my-4 lg:my-10">
         I&apos;m a software engineer situated in Houston, Texas who loves to
         build applications for people. At the moment, I&apos;m a full-stack
         software developer at{" "}

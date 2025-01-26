@@ -20,19 +20,14 @@ const NavItem = ({ className, href, children }) => {
 export const Navbar = () => {
   const { theme, toggleTheme } = useThemeMode();
   return (
-    <header className="text-xs transition z-20 fixed w-full backdrop-blur px-6 flex flex-wrap items-center">
+    <header className="text-xs transition z-20 fixed w-full backdrop-blur px-2 xl:px-6 flex flex-wrap items-center">
       <nav className="w-full flex flex-wrap items-center">
-        <ul className="flex gap-2 md:gap-4 w-full text-gray-900 pt-4 overflow-auto">
+        <ul className="flex gap-2 pb-4 lg:pb-0 lg:gap-4 w-full text-gray-900 pt-4 overflow-auto">
           <NavItem
             href="#hello-world"
-            className="relative mr-auto w-12 rounded border-2 border-b-4 border-r-3 border-l-black/25 border-t-black/25 border-r-black border-b-black  hover:font-semibold hover:brightness-110"
+            className="relative mr-auto min-w-12 rounded border-2 border-b-4 border-r-3 border-l-black/25 border-t-black/25 border-r-black border-b-black  hover:font-semibold hover:brightness-110"
           >
-            <Image
-              alt="Richard"
-              src="/images/me.png"
-              className="object-fill grow"
-              fill
-            />
+            <Image alt="Richard" src="/images/me.png" className="" fill />
           </NavItem>
           <NavItem href="#about">About</NavItem>
           <NavItem href="#experience">Experience</NavItem>

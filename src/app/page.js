@@ -13,35 +13,35 @@ const Home = async () => {
     <div className="flex flex-col font-mono theme-bg transition">
       <Navbar />
       <Sidebar />
-      <div className="w-full text-md">
-        <main className="container px-10">
+      <div className="w-full lg:w-3/4 text-md mx-auto">
+        <main className="w-full mx-auto px-2 lg:px-10">
           <section
             id="hello-world"
-            className="flex flex-col py-20 min-h-screen w-5/6 mx-auto"
+            className="flex flex-col py-20 min-h-screen w-full lg:mx-auto"
           >
             <Introduction />
           </section>
           <section
             id="about"
-            className="flex flex-col py-20 min-h-screen w-5/6 mx-auto my-auto"
+            className="flex flex-col py-20 min-h-screen w-full lg:mx-auto my-auto"
           >
             <About />
           </section>
           <section
             id="experience"
-            className="flex flex-col py-20 min-h-screen w-5/6 my-auto mx-auto"
+            className="flex flex-col py-20 min-h-screen w-full lg:mx-auto my-auto"
           >
             <Experience />
           </section>
           <section
             id="projects"
-            className="flex flex-col py-20 min-h-screen w-5/6 my-auto mx-auto"
+            className="flex flex-col py-20 min-h-screen w-full lg:mx-auto my-auto"
           >
             <Projects />
           </section>
           <section
             id="contact"
-            className="flex flex-col py-20 screen-80 w-5/6 mx-auto my-20"
+            className="flex flex-col py-20 min-h-[90vh] w-full lg:mx-auto mt-auto"
           >
             <ContactMe />
           </section>

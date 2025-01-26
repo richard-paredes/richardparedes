@@ -6,7 +6,7 @@ export const About = () => {
       <h2 className="text-2xl text-[#66615e] font-bold border-b-4 self-baseline mb-10">
         about me
       </h2>
-      <div className="w-full flex flex-col xl:flex-row overflow-auto sm:mx-auto md:mx-0 md:w-full">
+      <div className="w-full flex flex-col xl:flex-row overflow-auto sm:mx-auto lg:mx-0 lg:w-full">
         <div className="z-0 relative container-xs my-auto px-5">
           <Image
             alt="Richard Paredes"
@@ -16,8 +16,8 @@ export const About = () => {
             className="border-2 border-black border-b-6 border-r-4 object-contain"
           />
         </div>
-        <div className="p-4 flex flex-col container md:px-4 text-grayscaled my-5 xl:my-0">
-          <p className="text-body mb-5 md:mb-10">
+        <div className="p-4 flex flex-col container lg:px-4 text-grayscaled my-5 xl:my-0">
+          <p className="text-body mb-5 lg:mb-10">
             Hi-ya! My name is Richard and I&apos;m passionate about developing
             web applications. My journey into software development began back
             when I was a wee lad trying to install mods for my favorite game,{" "}
@@ -32,7 +32,7 @@ export const About = () => {
             I realized I really enjoy digging deep and working with computers to
             make magical things happen.
           </p>
-          <p className="text-body mb-5 md:mb-10">
+          <p className="text-body mb-5 lg:mb-10">
             Since then, I&apos;ve expanded my knowledge through various avenues:
             a{" "}
             <a
@@ -67,32 +67,68 @@ export const About = () => {
             >
               HCSS
             </a>
-            . Currently, I am honing my skills as a Software Engineer II at
+            . Currently, I am honing my skills as a Assistant Vice President at
             Citi, developing risk-analysis tools for Commodity traders, using
-            .NET, Python, & React.
+            Python, .NET, & React.
           </p>
-          <p className="text-body mb-2 md:mb-5">
+          <p className="text-body mb-2 lg:mb-5">
             Here are some technologies I&apos;ve picked up along the way:
           </p>
-          <div className="flex gap-x-4 gap-y-2 underline font-semibold text-[#949392] text-xs md:text-sm flex-wrap rounded-md uppercase">
-            <span className="pill">Git</span>
-            <span className="pill">C#</span>
-            <span className="pill">TypeScript</span>
-            <span className="pill">Python</span>
-            <span className="pill">ASP.NET</span>
-            <span className="pill">Node.JS</span>
-            <span className="pill">React</span>
-            <span className="pill">CSS</span>
-            <span className="pill">Next.JS</span>
-            <span className="pill">SQL Server</span>
-            <span className="pill">MySQL</span>
-            <span className="pill">DynamoDB</span>
-            <span className="pill">Docker</span>
-            <span className="pill">Kafka</span>
-            <span className="pill">DataDog</span>
-            <span className="pill">Amazon Web Services</span>
-            <span className="pill">Microsoft Azure</span>
-            <span className="pill">RedHat OpenShift</span>
+          <div className="flex gap-x-4 gap-y-2 font-semibold text-[#949392] text-xs lg:text-sm flex-wrap rounded-md uppercase">
+            <span className="text-[#66615e] text-xs border border-b-3 border-r-3 rounded p-1 bg-red-100">
+              Git
+            </span>
+            <span className="text-[#66615e] text-xs border border-b-3 border-r-3 rounded p-1 bg-red-100">
+              C#
+            </span>
+            <span className="text-[#66615e] text-xs border border-b-3 border-r-3 rounded p-1 bg-red-100">
+              TypeScript
+            </span>
+            <span className="text-[#66615e] text-xs border border-b-3 border-r-3 rounded p-1 bg-red-100">
+              Python
+            </span>
+            <span className="text-[#66615e] text-xs border border-b-3 border-r-3 rounded p-1 bg-red-100">
+              ASP.NET
+            </span>
+            <span className="text-[#66615e] text-xs border border-b-3 border-r-3 rounded p-1 bg-red-100">
+              Node.JS
+            </span>
+            <span className="text-[#66615e] text-xs border border-b-3 border-r-3 rounded p-1 bg-red-100">
+              React
+            </span>
+            <span className="text-[#66615e] text-xs border border-b-3 border-r-3 rounded p-1 bg-red-100">
+              CSS
+            </span>
+            <span className="text-[#66615e] text-xs border border-b-3 border-r-3 rounded p-1 bg-red-100">
+              Next.JS
+            </span>
+            <span className="text-[#66615e] text-xs border border-b-3 border-r-3 rounded p-1 bg-red-100">
+              SQL Server
+            </span>
+            <span className="text-[#66615e] text-xs border border-b-3 border-r-3 rounded p-1 bg-red-100">
+              MySQL
+            </span>
+            <span className="text-[#66615e] text-xs border border-b-3 border-r-3 rounded p-1 bg-red-100">
+              DynamoDB
+            </span>
+            <span className="text-[#66615e] text-xs border border-b-3 border-r-3 rounded p-1 bg-red-100">
+              Docker
+            </span>
+            <span className="text-[#66615e] text-xs border border-b-3 border-r-3 rounded p-1 bg-red-100">
+              Kafka
+            </span>
+            <span className="text-[#66615e] text-xs border border-b-3 border-r-3 rounded p-1 bg-red-100">
+              DataDog
+            </span>
+            <span className="text-[#66615e] text-xs border border-b-3 border-r-3 rounded p-1 bg-red-100">
+              Amazon Web Services
+            </span>
+            <span className="text-[#66615e] text-xs border border-b-3 border-r-3 rounded p-1 bg-red-100">
+              Microsoft Azure
+            </span>
+            <span className="text-[#66615e] text-xs border border-b-3 border-r-3 rounded p-1 bg-red-100">
+              RedHat OpenShift
+            </span>
           </div>
         </div>
       </div>

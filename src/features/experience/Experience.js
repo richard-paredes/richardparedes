@@ -9,7 +9,7 @@ export const Experience = () => {
       </h2>
       <Tabs>
         <TabContent label="Citi">
-          <h2 className="text-base md:text-lg font-semibold text-grayscaled">
+          <h2 className="text-base lg:text-lg font-semibold text-grayscaled">
             Assistant Vice President (Software Engineer III) at{" "}
             <a
               href="https://www.citi.com/"
@@ -36,7 +36,7 @@ export const Experience = () => {
           </ul>
         </TabContent>
         <TabContent label="JPMorgan Chase">
-          <h2 className="text-base md:text-lg font-semibold text-grayscaled">
+          <h2 className="text-base lg:text-lg font-semibold text-grayscaled">
             Software Engineer II at{" "}
             <a
               href="https://www.jpmorganchase.com/"
@@ -77,7 +77,7 @@ export const Experience = () => {
           </ul>
         </TabContent>
         <TabContent label="HCSS">
-          <h2 className="text-base md:text-lg font-semibold text-grayscaled">
+          <h2 className="text-base lg:text-lg font-semibold text-grayscaled">
             Software Developer at{" "}
             <a
               href="https://www.hcss.com/"
@@ -113,7 +113,7 @@ export const Experience = () => {
           </ul>
         </TabContent>
         <TabContent label="University of Houston">
-          <h2 className="text-base md:text-lg font-semibold text-grayscaled">
+          <h2 className="text-base lg:text-lg font-semibold text-grayscaled">
             Game Developer at{" "}
             <a
               target="_blank"
@@ -144,7 +144,7 @@ export const Experience = () => {
           </ul>
         </TabContent>
         <TabContent label="University of Texas at Austin">
-          <h2 className="text-base md:text-lg font-semibold text-grayscaled">
+          <h2 className="text-base lg:text-lg font-semibold text-grayscaled">
             Undergraduate Research Mentor at{" "}
             <a
               href="https://cns.utexas.edu/fri/students/next-steps/peer-mentoring-program"

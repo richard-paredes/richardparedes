@@ -5,7 +5,7 @@ import { useThemeMode } from "@/hooks/useThemeMode";
 export const Toggle = ({ checked, onToggle }) => {
   const { theme } = useThemeMode();
   return (
-    <div className="flex flex-col items-center justify-center ml-auto mt-3 md:mt-auto md:mr-0 md:ml-1 md:w-full">
+    <div className="flex flex-col items-center justify-center ml-auto mt-3 lg:mt-auto lg:mr-0 lg:ml-1 lg:w-full">
       <label className="flex items-center cursor-pointer">
         <div className="relative">
           <input
